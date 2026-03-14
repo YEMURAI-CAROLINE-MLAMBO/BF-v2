@@ -46,12 +46,14 @@ Moving from the BendingForce v2 conceptual architecture to a physical prototype 
 | **1.3** | Phosphor Efficiency | High-brightness RGB conversion from Blue/UV source. |
 | **2.1** | Rendering Engine | Real-time 3D model to light-field synthesis. |
 | **2.2** | Gesture Integration | Interactive rotation/scaling of floating objects. |
+| **2.3** | Game Engine SDK | Unity/Unreal Engine spatial rendering plugins. |
 | **3.1** | Mechanical Assembly | First ruggedized "Spatial Tablet" housing. |
 
 ## Strategic Technical Partners
 *   **Optics:** Edmund Optics, Thorlabs, AGC (Asahi Glass).
 *   **Display:** TCL CSOT, Kopin, Samsung Display (Micro-LED division).
 *   **Compute:** NVIDIA, Qualcomm.
+*   **Software/Gaming:** Unity Technologies, Epic Games (Unreal Engine).
 *   **Fabrication:** EV Group (NIL), TSMC (SoC/Micro-LED).
 
 ---

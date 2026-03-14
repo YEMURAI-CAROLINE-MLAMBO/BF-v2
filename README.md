@@ -10,6 +10,7 @@ This repository contains the conceptual architecture, hardware specifications, a
 
 - `docs/`: Comprehensive project documentation.
     - `docs/executive_summary.md`: High-level vision and business/technical value proposition.
+    - `docs/gaming_and_entertainment.md`: Specific use cases for immersive 3D gaming and media.
     - `docs/hardware/`: Detailed technical specifications for hardware components.
         - `docs/hardware/spatial_light_engine.md`: Optics, light paths, and holographic layers.
         - `docs/hardware/electronics_and_sensors.md`: SoC, sensors, interaction, and power.
@@ -21,7 +22,8 @@ This repository contains the conceptual architecture, hardware specifications, a
 1.  **Step-Out-of-Screen:** Visual objects extend into 3D space without head-mounted displays.
 2.  **Dual-Mode Functionality:** High-performance 2D tablet mode seamlessly transitioning to 3D spatial mode.
 3.  **All-Environment Resiliency:** Ruggedized hardware capable of operating in field research, emergency response, and professional environments.
-4.  **Energy Efficiency:** Intelligent light manipulation using fluorescent amplification and passive optical lattices to minimize power draw.
+4.  **Gaming & Entertainment Ready:** High-refresh-rate spatial optics and low-latency interaction for immersive 3D gaming and cinema.
+5.  **Energy Efficiency:** Intelligent light manipulation using fluorescent amplification and passive optical lattices to minimize power draw.
 
 ---
 *Confidential Concept Development Draft - Version 0.1*

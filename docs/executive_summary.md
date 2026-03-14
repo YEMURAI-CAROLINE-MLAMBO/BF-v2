@@ -1,7 +1,7 @@
 # Executive Summary: BendingForce v2
 
 ## Vision
-BendingForce v2 is the evolution of resilient computing, moving from the ultra-low-power flexible sheets of v1 to a high-performance **Spatial Light Computing Platform**. It is designed for professionals—surgeons, engineers, field researchers, and emergency responders—who require 3D spatial visualization without the encumbrance of AR glasses or VR headsets.
+BendingForce v2 is the evolution of resilient computing, moving from the ultra-low-power flexible sheets of v1 to a high-performance **Spatial Light Computing Platform**. It is designed for both professionals (surgeons, engineers, field researchers) and consumers (gamers, entertainment enthusiasts) who require immersive 3D spatial visualization without the encumbrance of AR glasses or VR headsets.
 
 ## The Problem
 Current spatial computing solutions are split between two extremes:
@@ -20,6 +20,7 @@ BendingForce v2 introduces a tablet-class device that projects "near-field" holo
 ## Target Markets
 *   **Medicine:** Real-time 3D anatomical models during surgery.
 *   **Engineering:** Interactive 3D mechanical assemblies and "exploded" views.
+*   **Gaming & Entertainment:** Tabletop 3D gaming, spatial cinema, and interactive digital collectibles.
 *   **Field Science:** 3D terrain reconstruction from LiDAR/Satellite data in the field.
 *   **Defense & Emergency Response:** Real-time 3D tactical maps for situational awareness.
 

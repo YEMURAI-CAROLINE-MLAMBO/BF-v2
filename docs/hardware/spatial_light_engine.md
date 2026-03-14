@@ -66,6 +66,7 @@ To function as a high-end 2D tablet, the SLE incorporates a **Liquid Crystal Pol
 | **Projection Depth** | 2cm to 30cm (Optimal at 15cm) |
 | **Color Gamut** | 100% DCI-P3 |
 | **Refresh Rate** | 120Hz (Spatial), 240Hz (2D) |
+| **Latency** | < 10ms (Photon-to-Motion) |
 
 ---
 *Technical Lead Note: Achieving retina-equivalent spatial resolution requires precise alignment of the MLA and the Emitter Array (sub-micron tolerance).*

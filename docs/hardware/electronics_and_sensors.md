@@ -21,9 +21,11 @@ Interaction with floating spatial objects requires low-latency depth and motion 
 *   **Infrared Gesture Cameras:** Stereo-IR cameras for high-speed skeletal hand tracking.
 *   **Capacitive Touch:** Integrated into the protective glass for standard 2D tablet interaction.
 
-### 2. Environmental Sensors
+### 2. Environmental & Immersion Sensors
 *   **Ambient Light Sensor (ALS):** Adjusts SLE brightness and fluorescent amplification levels based on surrounding light.
 *   **IMU (Inertial Measurement Unit):** 9-axis tracking for spatial anchoring of images during device movement.
+*   **Spatial Audio Array:** 4-speaker beamforming array with Dolby Atmos support to create "Sound-Out-of-Screen" to match the visual depth.
+*   **Localized Haptics:** High-frequency voice-coil actuators integrated into the chassis to provide tactile feedback synchronized with 3D interactions.
 
 ## Power Strategy
 Designed for high-performance and resiliency.

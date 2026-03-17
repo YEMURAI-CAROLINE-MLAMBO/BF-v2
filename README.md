@@ -11,10 +11,12 @@ This repository contains the conceptual architecture, hardware specifications, a
 - `docs/`: Comprehensive project documentation.
     - `docs/executive_summary.md`: High-level vision and business/technical value proposition.
     - `docs/gaming_and_entertainment.md`: Specific use cases for immersive 3D gaming and media.
+    - `docs/business_strategy.md`: Market positioning, pricing tiers, and competitive analysis.
     - `docs/hardware/`: Detailed technical specifications for hardware components.
         - `docs/hardware/spatial_light_engine.md`: Optics, light paths, and holographic layers.
         - `docs/hardware/electronics_and_sensors.md`: SoC, sensors, interaction, and power.
         - `docs/hardware/industrial_design.md`: Form factor, materials, and durability.
+        - `docs/hardware/bill_of_materials.md`: Estimated component costs and scaling strategy.
     - `docs/prototyping/`: Roadmap and off-the-shelf component research for early-phase development.
 
 ## Core Design Philosophy

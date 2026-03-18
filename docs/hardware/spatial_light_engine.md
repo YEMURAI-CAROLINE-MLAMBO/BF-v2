@@ -1,7 +1,7 @@
 # Spatial Light Engine (SLE) Technical Specification
 
 ## Overview
-The Spatial Light Engine (SLE) is the heart of BendingForce v2. It is a complex optical assembly that transforms 2D pixel data into a 3D light field. The system is designed to provide **Retina-Equivalent Spatial Resolution** and full RGB color depth.
+The Spatial Light Engine (SLE) is the heart of BendingForce v2. It is a complex optical assembly that transforms 2D pixel data into a 3D light field. The system is designed to produce the **Crystal Lattice Spatial Resolution**, a groundbreaking visual standard for "Step-Out-of-Screen" holographic imagery.
 
 ## Optical Path Architecture
 The light path follows a strictly controlled sequence to ensure photon coherence and precise angular distribution.
@@ -21,6 +21,13 @@ graph TD
     E
     end
 ```
+
+## The "Crystal Lattice" Visual Standard
+The **Crystal Lattice** is the resulting visual structure of the holographic imagery. Unlike traditional pixels, which are confined to a 2D grid, the Crystal Lattice describes a three-dimensional arrangement of light points in space.
+
+*   **Lattice Density:** >1,000,000 "Crystal Points" per cubic centimeter.
+*   **Volumetric Coherence:** High-frequency phase modulation ensures that objects appear solid and stable from any viewing angle.
+*   **Retina-Equivalent Depth:** Individual depth layers are spaced at the limit of human visual perception (sub-millimeter Z-axis resolution).
 
 ## Component Specifications
 

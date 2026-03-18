@@ -13,9 +13,10 @@ This repository contains the conceptual architecture, hardware specifications, a
     - `docs/gaming_and_entertainment.md`: Specific use cases for immersive 3D gaming and media.
     - `docs/business_strategy.md`: Market positioning, pricing tiers, and competitive analysis.
     - `docs/hardware/`: Detailed technical specifications for hardware components.
-        - `docs/hardware/spatial_light_engine.md`: Optics, light paths, and holographic layers.
+        - `docs/hardware/spatial_light_engine.md`: The "Crystal Lattice" optics and light path.
         - `docs/hardware/electronics_and_sensors.md`: SoC, sensors, interaction, and power.
         - `docs/hardware/industrial_design.md`: Form factor, materials, and durability.
+        - `docs/hardware/ruggedized_edition.md`: Specs for extreme-environment field deployment.
         - `docs/hardware/bill_of_materials.md`: Estimated component costs and scaling strategy.
     - `docs/prototyping/`: Roadmap and off-the-shelf component research for early-phase development.
 

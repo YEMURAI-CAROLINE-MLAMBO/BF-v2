@@ -3,14 +3,14 @@
 ## Form Factor
 BendingForce v2 is designed as a professional-grade tablet with a focus on ergonomics for both desktop and handheld spatial interaction.
 
-*   **Chassis:** CNC-machined Aerospace-grade Magnesium Alloy (for heat dissipation and weight reduction).
+*   **Chassis:** CNC-machined Aerospace-grade Magnesium-Titanium Hybrid Alloy (for high strength-to-weight and superior thermal properties).
 *   **Dimensions:** ~280mm x 210mm x 12mm (Slim profile despite the complex optical stack).
 *   **Weight:** < 900g.
 
 ## The Layer Stack (Top to Bottom)
 The physical assembly is a marvel of precision engineering, ensuring each optical layer is aligned to sub-micron tolerances.
 
-1.  **Protective Glass:** Gorilla Glass Victus 2 (Chemically strengthened, Anti-reflective, Oleophobic).
+1.  **Crystal-Glass Protection:** Sapphire-coated, chemically strengthened ceramic glass with a Diamond-Like Carbon (DLC) coating for scratch resistance and zero-reflection.
 2.  **Fluorescent Amplification Film:** Quantum Dot layer (Final emission stage).
 3.  **Micro-Prism Optical Lattice:** Precision-etched polymer lattice for parallax generation.
 4.  **Diffractive Holographic Layer:** Nano-structured film for wavefront shaping.

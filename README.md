@@ -12,8 +12,12 @@ This repository contains the conceptual architecture, hardware specifications, a
     - `docs/executive_summary.md`: High-level vision and business/technical value proposition.
     - `docs/gaming_and_entertainment.md`: Specific use cases for immersive 3D gaming and media.
     - `docs/business_strategy.md`: Market positioning, pricing tiers, and competitive analysis.
-    - `docs/hardware/`: Detailed technical specifications for hardware components.
+    - `docs/intellectual_property/`: Formal invention descriptions and patent-ready drafts.
+        - `docs/intellectual_property/invention_description.md`: The "Step-Out-of-Screen" patent draft.
+    - `docs/hardware/`: Detailed technical specifications and diagrams.
         - `docs/hardware/spatial_light_engine.md`: The "Crystal Lattice" optics and light path.
+        - `docs/hardware/optical_diagrams.md`: Granular visualizations of the light path.
+        - `docs/hardware/system_block_diagram.md`: Full tablet architecture mapping.
         - `docs/hardware/electronics_and_sensors.md`: SoC, sensors, interaction, and power.
         - `docs/hardware/industrial_design.md`: Form factor, materials, and durability.
         - `docs/hardware/ruggedized_edition.md`: Specs for extreme-environment field deployment.

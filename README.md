@@ -12,6 +12,7 @@ This repository contains the conceptual architecture, hardware specifications, a
     - `docs/executive_summary.md`: High-level vision and business/technical value proposition.
     - `docs/gaming_and_entertainment.md`: Specific use cases for immersive 3D gaming and media.
     - `docs/business_strategy.md`: Market positioning, pricing tiers, and competitive analysis.
+    - `docs/strategic_analysis.md`: Points of Inflection and Infractions (Accelerators vs. Risks).
     - `docs/intellectual_property/`: Formal invention descriptions and patent-ready drafts.
         - `docs/intellectual_property/invention_description.md`: The "Step-Out-of-Screen" patent draft.
     - `docs/hardware/`: Detailed technical specifications and diagrams.

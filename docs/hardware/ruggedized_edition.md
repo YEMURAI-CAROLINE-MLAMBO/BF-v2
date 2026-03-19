@@ -30,6 +30,7 @@ The RFE chassis includes four reinforced **Force-Link** mechanical/magnetic moun
 
 | Accessory Type | Application |
 | :--- | :--- |
+| **Apex Force-Pack** | Hot-swappable 150Wh external battery (Total capacity 350Wh). |
 | **Solar-Tactical Dock**| External solar-permissive charging array (off-device thermal management). |
 | **Vehicle Dock** | High-vibration data-link and power for tactical vehicles. |
 | **Field Tripod** | Rapid deployment for 3D terrain/archaeological scanning. |

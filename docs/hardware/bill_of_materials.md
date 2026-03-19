@@ -17,7 +17,7 @@ This document outlines the estimated component costs for the **BendingForce v2**
 | **Memory & Storage** | 16GB LPDDR5X + 512GB UFS 4.0 | $140.00 | $110.00 |
 | **Interaction & Sensors** | LiDAR, ToF, Gesture Cameras | $110.00 | $70.00 |
 | **Housing & Chassis** | CNC Magnesium Alloy, Ruggedized | $90.00 | $60.00 |
-| **Power System** | 100Wh Battery + Solar Backplane | $60.00 | $40.00 |
+| **Power System** | 200Wh Apex Battery + 140W PD | $120.00 | $80.00 |
 | **Connectivity & Audio** | 5G, Wi-Fi 7, Spatial Audio Array | $50.00 | $35.00 |
 | **Assembly & Testing** | Precision alignment & IP68 sealing | $100.00 | $60.00 |
 | **Total Estimated BOM** | | **$1,480.00** | **$945.00** |

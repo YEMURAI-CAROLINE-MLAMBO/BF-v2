@@ -22,12 +22,12 @@ Unlike traditional tablets that compete on price-per-spec, BendingForce v2 comma
 ## 4. Competitive Landscape
 
 ### BendingForce v2 vs. Samsung (The Pricing Competitor)
-*   **Edge:** BendingForce offers 3D holographic capabilities and superior ruggedization (MIL-STD).
+*   **Edge:** BendingForce offers 3D holographic capabilities and superior ruggedization (MIL-STD). **Extreme Endurance:** 200Wh vs 40Wh standard flagship capacity.
 *   **Parity:** OLED/Micro-LED quality and stylus performance.
 *   **Strategy:** Price matching the Galaxy Tab Ultra models while offering "Next-Gen" features.
 
 ### BendingForce v2 vs. Apple (The Feature/Status Competitor)
-*   **Edge:** No glasses required for spatial computing (Apple Vision Pro requires an HMD). Rugged field-readiness.
+*   **Edge:** No glasses required for spatial computing (Apple Vision Pro requires an HMD). Rugged field-readiness. **Apex-Class Power:** 2x to 3x the battery capacity and charging speed of iPad Pro.
 *   **Parity:** Build quality, custom silicon performance, and premium brand aesthetic.
 *   **Strategy:** Positioning as the "Tablet from the Future" that does what an iPad cannot.
 

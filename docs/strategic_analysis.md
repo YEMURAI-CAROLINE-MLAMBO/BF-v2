@@ -10,6 +10,7 @@ These are key events that will fundamentally change the trajectory of BendingFor
 | :--- | :--- | :--- |
 | **Micro-LED Cost Parity** | When Micro-LED panel costs fall to within 20% of high-end OLED panels. | Enables the $999 retail target for the mass-market "Standard" edition. |
 | **Spatial Computing SDK Adoption** | Broad developer uptake of Unity/Unreal spatial plugins. | Rapid expansion of the 3D application and gaming library. |
+| **Silicon-Anode Battery Maturity** | Commercial availability of high-density silicon-anode cells. | Enables the 200Wh "Apex" capacity within a portable tablet form factor. |
 | **LEO Satellite Proliferation** | Near-universal high-bandwidth connectivity (e.g., Starlink) in field environments. | Validates the "Ruggedized Field Edition" for remote/off-grid professional use. |
 | **Apple Vision Pro Market Shifting** | Apple's entry into spatial computing normalizes the *concept* of 3D data interaction. | Reduces "concept friction" for BendingForce, allowing us to pivot as the "no-glasses" alternative. |
 

@@ -7,10 +7,11 @@ This document outlines the full system architecture for the BendingForce v2 Spat
 
 ```mermaid
 graph TD
-    subgraph "Power Management (PMIC)"
-    Battery[100Wh Battery]
-    Supercap[Supercapacitor Buffer]
-    Solar[Perovskite Solar Film]
+    subgraph "Power Management (Apex PMIC)"
+    Battery[200Wh Silicon-Anode Battery]
+    Supercap[Supercapacitor Array]
+    Wireless[65W Wireless Charging]
+    SolarDock[External 200W Solar Dock]
     Charging[Charge Controller]
     end
 
@@ -46,7 +47,8 @@ graph TD
 
     Charging --> Battery
     Battery --> PMIC[Power Distribution]
-    Solar --> Charging
+    Wireless --> Charging
+    SolarDock --> Charging
     Supercap --> PMIC
 
     ToF --> NPU

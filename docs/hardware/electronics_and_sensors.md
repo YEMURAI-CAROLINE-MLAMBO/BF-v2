@@ -30,14 +30,15 @@ Interaction with floating spatial objects requires low-latency depth and motion 
 ## Power Strategy
 Designed for high-performance and resiliency.
 
-### 1. Battery System
-*   **Type:** Silicon-anode Lithium-Ion or Solid-State battery for higher energy density.
-*   **Capacity:** 100 Wh (Targeting 6-8 hours of mixed 2D/3D use).
-*   **Supercapacitor Buffer:** Handles peak power spikes during high-intensity 3D rendering.
+### 1. Apex-Class Battery System
+*   **Type:** Dual-cell Ultra-High Density Silicon-Anode Lithium-Ion (Targeting 350 Wh/kg).
+*   **Capacity:** 200 Wh (~54,000 mAh) — Built for 24-hour continuous 3D spatial rendering or 30-day standby in the field.
+*   **Supercapacitor Buffer:** High-discharge supercapacitor array to handle transient power spikes (up to 150W) during complex "Crystal Lattice" reconstruction.
 
-### 2. Advanced Charging & Energy
-*   **High-Speed Wireless Charging:** Integrated Qi2-compliant magnetic induction coil for up to 50W wireless power delivery.
-*   **Solar-Permissive External Docking:** Designed for seamless integration with external tactical solar arrays via the "Force-Link" connector, offloading the thermal stress of solar charging from the device's internal chassis.
+### 2. Fast-Charge & Energy Infrastructure
+*   **Wired Charging:** Dual USB-C PD 3.1 (EPR) ports supporting up to 140W fast charging (0-80% in 45 minutes).
+*   **High-Speed Wireless Charging:** Integrated Qi2-compliant magnetic induction coil for up to 65W wireless power delivery.
+*   **Solar-Permissive External Docking:** Designed for seamless integration with high-output external tactical solar arrays (up to 200W) via the "Force-Link" connector.
 
 ## Connectivity
 *   **Wireless:** Wi-Fi 7, Bluetooth 5.4, and 5G/Satellite (Low-Earth Orbit) connectivity for remote field work.

@@ -7,6 +7,7 @@ The **Ruggedized Field Edition (RFE)** is a specialized variant of BendingForce 
 
 ### 1.1 Ingress & Shock Protection
 *   **IP69K Rating:** Dust-tight and resistant to high-pressure, high-temperature water jets.
+*   **Advanced Thermal Resilience:** Utilizing All-Solid-State Battery (ASSB) technology, the device remains fully operational in extreme temperatures (-40°C to +85°C) without degradation or risk of fire.
 *   **MIL-STD-810H Certified:**
     *   **Drop:** Survives 2-meter drops onto concrete.
     *   **Shock/Vibration:** Validated for mounting in armored vehicles, rotorcraft, and high-speed maritime platforms.

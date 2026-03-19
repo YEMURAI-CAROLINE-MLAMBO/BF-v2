@@ -30,14 +30,17 @@ Interaction with floating spatial objects requires low-latency depth and motion 
 ## Power Strategy
 Designed for high-performance and resiliency.
 
-### 1. Apex-Class Battery System
-*   **Type:** Dual-cell Ultra-High Density Silicon-Anode Lithium-Ion (Targeting 350 Wh/kg).
-*   **Capacity:** 200 Wh (~54,000 mAh) — Built for 24-hour continuous 3D spatial rendering or 30-day standby in the field.
-*   **Supercapacitor Buffer:** High-discharge supercapacitor array to handle transient power spikes (up to 150W) during complex "Crystal Lattice" reconstruction.
+### 1. Apex-Class Battery System (All-Solid-State)
+*   **Type:** All-Solid-State Battery (ASSB) with Lithium-Manganese Oxide (LMO) hybrid or high-nickel cathode.
+*   **Energy Density:** 500 Wh/kg — Enabling 200 Wh (~54,000 mAh) of capacity in a compact, slim form factor.
+*   **Safety & Stability:** No flammable liquid electrolyte; operational range from -40°C to +85°C with zero risk of thermal runaway.
+*   **Cycle Life:** >2000 deep-discharge cycles with <10% degradation.
+*   **Supercapacitor Buffer:** AI-managed high-discharge supercapacitor array to handle transient power spikes (up to 150W) during complex "Crystal Lattice" reconstruction.
 
-### 2. Fast-Charge & Energy Infrastructure
-*   **Wired Charging:** Dual USB-C PD 3.1 (EPR) ports supporting up to 140W fast charging (0-80% in 45 minutes).
+### 2. Fast-Charge & Intelligent Power Distribution Network (IPDN)
+*   **Wired Charging:** Dual USB-C PD 3.1 (EPR) ports supporting up to 140W fast charging (0-80% in 30 minutes, utilizing ASSB's superior C-rate performance).
 *   **High-Speed Wireless Charging:** Integrated Qi2-compliant magnetic induction coil for up to 65W wireless power delivery.
+*   **Intelligent Power Distribution Network (IPDN):** An AI-managed internal grid that uses the SoC's NPU to predict spatial rendering load and dynamically adjust voltage rails, maximizing efficiency during 3D vs 2D operation.
 *   **Solar-Permissive External Docking:** Designed for seamless integration with high-output external tactical solar arrays (up to 200W) via the "Force-Link" connector.
 
 ## Connectivity

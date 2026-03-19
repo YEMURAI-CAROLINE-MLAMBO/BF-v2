@@ -7,12 +7,12 @@ This document outlines the full system architecture for the BendingForce v2 Spat
 
 ```mermaid
 graph TD
-    subgraph "Power Management (Apex PMIC)"
-    Battery[200Wh Silicon-Anode Battery]
+    subgraph "Power Management (Apex IPDN)"
+    Battery[200Wh All-Solid-State Battery]
     Supercap[Supercapacitor Array]
     Wireless[65W Wireless Charging]
     SolarDock[External 200W Solar Dock]
-    Charging[Charge Controller]
+    IPDN[AI-Managed Power Network]
     end
 
     subgraph "Main Processor (SoC)"
@@ -45,10 +45,11 @@ graph TD
     Haptics[Localized Voice-Coil Haptics]
     end
 
-    Charging --> Battery
-    Battery --> PMIC[Power Distribution]
-    Wireless --> Charging
-    SolarDock --> Charging
+    IPDN --> Battery
+    Battery --> IPDN
+    Wireless --> IPDN
+    SolarDock --> IPDN
+    NPU -->|Power Prediction| IPDN
     Supercap --> PMIC
 
     ToF --> NPU

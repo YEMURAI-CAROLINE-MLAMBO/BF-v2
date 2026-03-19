@@ -35,8 +35,9 @@ Designed for high-performance and resiliency.
 *   **Capacity:** 100 Wh (Targeting 6-8 hours of mixed 2D/3D use).
 *   **Supercapacitor Buffer:** Handles peak power spikes during high-intensity 3D rendering.
 
-### 2. Energy Harvesting
-*   **Integrated Solar Film:** A high-efficiency perovskite solar layer integrated into the bezel and/or backplane to provide trickle charging in field environments.
+### 2. Advanced Charging & Energy
+*   **High-Speed Wireless Charging:** Integrated Qi2-compliant magnetic induction coil for up to 50W wireless power delivery.
+*   **Solar-Permissive External Docking:** Designed for seamless integration with external tactical solar arrays via the "Force-Link" connector, offloading the thermal stress of solar charging from the device's internal chassis.
 
 ## Connectivity
 *   **Wireless:** Wi-Fi 7, Bluetooth 5.4, and 5G/Satellite (Low-Earth Orbit) connectivity for remote field work.
@@ -75,5 +76,4 @@ graph LR
     CPU --> Standard
 
     Power[Power Management] --> CPU
-    Solar[Solar Film] --> Power
 ```

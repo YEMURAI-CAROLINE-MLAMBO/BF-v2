@@ -30,6 +30,7 @@ The RFE chassis includes four reinforced **Force-Link** mechanical/magnetic moun
 
 | Accessory Type | Application |
 | :--- | :--- |
+| **Solar-Tactical Dock**| External solar-permissive charging array (off-device thermal management). |
 | **Vehicle Dock** | High-vibration data-link and power for tactical vehicles. |
 | **Field Tripod** | Rapid deployment for 3D terrain/archaeological scanning. |
 | **Surgical Arm** | Sterile-compatible mounting for 3D anatomical visualization in field hospitals. |

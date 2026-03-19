@@ -20,7 +20,7 @@ The physical assembly is a marvel of precision engineering, ensuring each optica
 8.  **Thermal Management Layer:** Graphene/Vapor-chamber hybrid cooling.
 9.  **Processing Electronics:** Main PCB (SoC, Memory, Storage).
 10. **Battery System:** Structural battery pack.
-11. **Solar Backplane:** Integrated solar charging skin.
+11. **Wireless Charging Coil:** Qi2-compliant induction coil and magnetic alignment ring.
 
 ## Environmental Durability
 Inheriting the DNA of BendingForce v1, v2 is built for extreme field conditions.

@@ -1,83 +1,56 @@
-# Electronics, Sensors, and Power Systems
+# Electronics and Sensor Fusion Architecture
 
-## Computing Architecture
-BendingForce v2 requires significant computational power to calculate light fields in real-time.
+## Overview
+BendingForce v2 is built on a high-performance, AI-optimized electronics platform designed to manage the immense data throughput required for real-time spatial synthesis and interaction.
 
-### 1. System-on-Chip (SoC)
-*   **Target:** High-end ARM-based architecture (e.g., custom silicon or top-tier commercial SoC like Apple M-series equivalent or NVIDIA Grace Hopper mobile variant).
-*   **CPU:** 12+ Core architecture (Performance/Efficiency split).
-*   **GPU:** Unified memory architecture with high TFLOPS (Teraflops) for 3D rendering.
-*   **NPU (Neural Processing Unit):** Dedicated 50+ TOPS (Tera Operations Per Second) for AI-accelerated light field prediction and sensor fusion.
+## 1. The Core Processing Unit: Apex SoC
+The heart of the tablet is the **Apex Spatial System-on-Chip (SoC)**, featuring:
+*   **High-Performance CPU:** 16-core ARM v9.2 architecture (8 Performance, 8 Efficiency cores).
+*   **Ray-Tracing GPU:** 20-core GPU with dedicated ray-tracing and mesh-shading hardware for spatial rendering.
+*   **Holographic Synthesis Unit (HSU):** A specialized silicon block that transforms 3D depth maps into phase-modulated light field patterns at 120Hz.
+*   **Integrated AI-NPU:** 100 TOPS (Tera Operations Per Second) for real-time sensor fusion, gesture prediction, and image upscaling.
+*   **Unified Memory:** 32GB LPDDR5X (up to 64GB in Extreme configurations).
 
-### 2. Spatial Rendering Pipeline
-*   **Hardware Acceleration:** Real-time ray-tracing hardware and dedicated "Holographic Synthesis Units" (HSU) to calculate interference patterns for the SLE.
+## 2. The Spatial Interaction Sensor Suite (SISS)
+Interaction occurs in the "Step-Out-of-Screen" (SOOS) volume (2cm - 30cm). This is facilitated by three primary sensor modalities.
 
-## Sensor Suite
-Interaction with floating spatial objects requires low-latency depth and motion tracking.
+### 2.1 Short-Range Time-of-Flight (SR-ToF)
+*   **Resolution:** 640x480 depth map.
+*   **Frequency:** 120Hz operation.
+*   **Accuracy:** Sub-millimeter precision at 2cm - 50cm.
+*   **Purpose:** Tracking individual finger movements, micro-gestures, and "pinch-to-touch" interaction with holographic objects.
 
-### 1. Interaction Sensors
-*   **LiDAR (Long Range):** For environment mapping (2m - 10m).
-*   **Short-Range Time-of-Flight (ToF):** Dedicated sensor for the "Spatial Zone" (2cm - 50cm) above the screen to track hand/finger positions with sub-millimeter precision.
-*   **Infrared Gesture Cameras:** Stereo-IR cameras for high-speed skeletal hand tracking.
-*   **Capacitive Touch:** Integrated into the protective glass for standard 2D tablet interaction.
+### 2.2 Infrared (IR) Gesture Cameras
+*   **Configuration:** Dual wide-angle IR cameras with an integrated 850nm IR illuminator.
+*   **Field of View:** 160° horizontal / 120° vertical.
+*   **Purpose:** Wide-area hand tracking, body posture estimation (for multi-user parallax correction), and skeletal tracking.
 
-### 2. Environmental & Immersion Sensors
-*   **Ambient Light Sensor (ALS):** Adjusts SLE brightness and fluorescent amplification levels based on surrounding light.
-*   **IMU (Inertial Measurement Unit):** 9-axis tracking for spatial anchoring of images during device movement.
-*   **Spatial Audio Array:** 4-speaker beamforming array with Dolby Atmos support to create "Sound-Out-of-Screen" to match the visual depth.
-*   **Localized Haptics:** High-frequency voice-coil actuators integrated into the chassis to provide tactile feedback synchronized with 3D interactions.
+### 2.3 Ultrasonic Acoustic Sensors
+*   **Technology:** Solid-state ultrasonic transceivers embedded in the chassis.
+*   **Purpose:** Provides redundant hand tracking in high-glare environments (direct sunlight) where IR sensors may struggle.
 
-## Power Strategy
-Designed for high-performance and resiliency.
+## 3. Environmental Perception
+For professional field use, the device must maintain constant awareness of its surroundings.
+*   **Global LiDAR:** Long-range (10m) LiDAR for environment scanning and 3D mapping.
+*   **Inertial Measurement Unit (IMU):** 9-axis (Gyro, Accelerometer, Magnetometer) for ultra-stable holographic projection even when the device is in motion.
+*   **Ambient Light Sensor (ALS):** Spectral sensor that automatically adjusts the SLE's fluorescent layer excitation to match environmental color temperatures.
 
-### 1. Apex-Class Battery System (All-Solid-State)
-*   **Type:** All-Solid-State Battery (ASSB) with Lithium-Manganese Oxide (LMO) hybrid or high-nickel cathode.
-*   **Energy Density:** 500 Wh/kg — Enabling 200 Wh (~54,000 mAh) of capacity in a compact, slim form factor.
-*   **Safety & Stability:** No flammable liquid electrolyte; operational range from -40°C to +85°C with zero risk of thermal runaway.
-*   **Cycle Life:** >2000 deep-discharge cycles with <10% degradation.
-*   **Supercapacitor Buffer:** AI-managed high-discharge supercapacitor array to handle transient power spikes (up to 150W) during complex "Crystal Lattice" reconstruction.
+## 4. Interaction Modalities (SOOS)
+The combination of HSU processing and SISS sensing allows for complex 3D interaction:
+*   **Holographic Rotation:** Grab and rotate 3D objects with natural wrist movements.
+*   **Volumetric Pinch-to-Zoom:** Using two-handed gestures to scale holographic data.
+*   **Component Explosion:** "Tap" a 3D assembly to explode it into its constituent parts within the SOOS volume.
+*   **Spatial Annotation:** Using the high-precision stylus to "draw" or "mark" directly in 3D space above the screen.
 
-### 2. Fast-Charge & Intelligent Power Distribution Network (IPDN)
-*   **Wired Charging:** Dual USB-C PD 3.1 (EPR) ports supporting up to 140W fast charging (0-80% in 30 minutes, utilizing ASSB's superior C-rate performance).
-*   **High-Speed Wireless Charging:** Integrated Qi2-compliant magnetic induction coil for up to 65W wireless power delivery.
-*   **Intelligent Power Distribution Network (IPDN):** An AI-managed internal grid that uses the SoC's NPU to predict spatial rendering load and dynamically adjust voltage rails, maximizing efficiency during 3D vs 2D operation.
-*   **Solar-Permissive External Docking:** Designed for seamless integration with high-output external tactical solar arrays (up to 200W) via the "Force-Link" connector.
+## 5. Connectivity Suite
+*   **5G NTN:** Integrated satellite-to-device connectivity for remote field research.
+*   **Wi-Fi 7 / Bluetooth 5.4:** Ultra-low-latency local data transfer.
+*   **USB4 / Thunderbolt 4:** High-bandwidth wired connection for external 8K spatial monitoring.
 
-## Connectivity
-*   **Wireless:** Wi-Fi 7, Bluetooth 5.4, and 5G/Satellite (Low-Earth Orbit) connectivity for remote field work.
-*   **Wired:** Dual Thunderbolt 4 / USB4 ports for high-speed data and external display output.
+## 6. Power and Battery System
+*   **Primary Battery:** 200Wh All-Solid-State Battery (ASSB) for high energy density and safety in extreme conditions.
+*   **Charging:** 100W Fast Wired / 65W Wireless Qi2 Charging.
+*   **IPDN (Intelligent Power Distribution Network):** AI-managed power delivery that optimizes energy between the SoC and the high-draw SLE stack.
 
 ---
-
-## Block Diagram
-
-```mermaid
-graph LR
-    subgraph "Sensors"
-    ToF[Short-Range ToF]
-    IR[Gesture Cameras]
-    LiDAR[Environmental LiDAR]
-    end
-
-    subgraph "Processing Core (SoC)"
-    CPU
-    GPU
-    NPU
-    HSU[Holographic Synthesis Unit]
-    end
-
-    subgraph "Display Output"
-    SLE[Spatial Light Engine]
-    Standard[2D Tablet Mode]
-    end
-
-    ToF --> NPU
-    IR --> NPU
-    LiDAR --> CPU
-
-    GPU --> HSU
-    HSU --> SLE
-    CPU --> Standard
-
-    Power[Power Management] --> CPU
-```
+*Electronics Engineering Lead Note: The HSU-to-SLE data bus uses a proprietary optical interconnect to handle the 1.2 Tbps bandwidth required for uncompressed 120Hz spatial frames.*

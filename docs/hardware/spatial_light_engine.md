@@ -1,14 +1,14 @@
 # Spatial Light Engine (SLE) Technical Specification
 
 ## Overview
-The Spatial Light Engine (SLE) is the heart of BendingForce v2. It is a complex optical assembly that transforms 2D pixel data into a 3D light field. The system is designed to produce the **Crystal Lattice Spatial Resolution**, a groundbreaking visual standard for "Step-Out-of-Screen" holographic imagery.
+The Spatial Light Engine (SLE) is the core optical subsystem of BendingForce v2. It transforms high-resolution 2D emitter data into a 3D light field via a five-layer **Laminated Optical Sandwich**. The resulting visual output is the **Crystal Lattice**, capable of projecting "Step-Out-of-Screen" (SOOS) imagery 2cm – 30cm above the surface.
 
 ## Optical Path Architecture
 The light path follows a strictly controlled sequence to ensure photon coherence and precise angular distribution.
 
 ```mermaid
 graph TD
-    A[Micro-LED Emitter Array] -->|Coherent Blue/UV/RGB| B[Micro-Lens Array]
+    A[Micro-LED Emitter Array] -->|GaN-on-Si Coherent Blue/UV| B[Micro-Lens Array]
     B -->|Collimated Light Channels| C[Diffractive Holographic Film]
     C -->|Phase-Modulated Wavefronts| D[Micro-Prism Optical Lattice]
     D -->|Angularly Redirected Rays| E[Fluorescent Amplification Layer]
@@ -22,58 +22,48 @@ graph TD
     end
 ```
 
+## Advanced Optical Specifications
+
+### 1. Primary Emitter: GaN-on-Silicon Micro-LED
+*   **Technology:** Monolithic Gallium Nitride (GaN) on Silicon.
+*   **Resolution:** 8000 x 6000 (Native >1000 PPI).
+*   **Wavelengths:** Narrow-band Blue (450nm) and Near-UV (395nm) for phosphor/QD excitation.
+*   **Peak Radiance:** >1,000,000 cd/m² (at emitter level) to ensure high visibility after stack attenuation.
+*   **Switching Speed:** < 1 microsecond (essential for high-frequency 3D frame interleaving).
+
+### 2. Micro-Lens Array (MLA): Beam Collimation
+*   **Material:** Nano-imprinted high-index optical polymer ($n = 1.62$).
+*   **Pitch:** 20-micron pitch, aligned 1:1 with Micro-LED clusters.
+*   **Geometry:** Aspheric micro-lenses to minimize spherical aberration and maximize light throughput.
+*   **Function:** Ensures all photons enter the diffractive layer at a near-perpendicular angle ($\pm 1^\circ$).
+
+### 3. Diffractive Holographic Film (DHF): Wavefront Shaping
+*   **Structure:** Surface Relief Gratings (SRG) with nano-scale binary or multilevel profiles.
+*   **Grating Period:** 400nm - 700nm.
+*   **Phase Modulation:** Binary Phase-Only (BPO) for maximum diffraction efficiency (>85%).
+*   **Function:** Encodes depth and interference patterns. This is the primary layer responsible for the "Step-Out-of-Screen" holographic effect.
+
+### 4. Micro-Prism Optical Lattice (MPOL): Angular Parallax
+*   **Geometry:** Hexagonal lattice of micro-faceted prisms.
+*   **Prism Facet Angle:** Variable ($\theta = 15^\circ$ to $45^\circ$) to cover a 120-degree viewing frustum.
+*   **Refractive Index:** High-index material ($n = 1.78$) for sharp angular redirection.
+*   **Function:** Generates the "Look-Around" effect by directing different light-field slices to different viewing angles.
+
+### 5. Fluorescent Amplification Layer (FAL): Spectral Conversion
+*   **Material:** Quantum Dot (QD) or Rare-earth doped phosphors embedded in a high-clarity resin.
+*   **Conversion:** Blue/UV $\rightarrow$ High-saturated RGB.
+*   **Efficiency:** External Quantum Efficiency (EQE) > 90%.
+*   **Function:** Final emission stage. By converting light at the very top of the stack, it eliminates "ghosting" and internal reflections within the lower optical layers.
+
 ## The "Crystal Lattice" Visual Standard
-The **Crystal Lattice** is the resulting visual structure of the holographic imagery. Unlike traditional pixels, which are confined to a 2D grid, the Crystal Lattice describes a three-dimensional arrangement of light points in space.
-
 *   **Lattice Density:** >1,000,000 "Crystal Points" per cubic centimeter.
-*   **Volumetric Coherence:** High-frequency phase modulation ensures that objects appear solid and stable from any viewing angle.
-*   **Retina-Equivalent Depth:** Individual depth layers are spaced at the limit of human visual perception (sub-millimeter Z-axis resolution).
+*   **Depth (Z-axis) Resolution:** 128 layers in the 2cm-30cm volume.
+*   **Point Coherence:** High-frequency phase modulation ensures that objects appear solid and stable from any viewing angle.
 
-## Component Specifications
-
-### 1. Micro-LED Emitter Array
-*   **Technology:** GaN-on-Silicon Micro-LED.
-*   **Resolution:** 8000 x 6000 (Targeting >1000 PPI).
-*   **Wavelengths:** Dedicated Blue/UV (for phosphor excitation) + RGB for 2D mode.
-*   **Peak Brightness:** 5,000 nits (to compensate for optical stack losses).
-*   **Function:** High-speed photon generation with sub-micron pixel pitch.
-
-### 2. Micro-Lens Array (MLA)
-*   **Material:** High-index optical polymer (Nano-imprinted).
-*   **Pitch:** Matched 1:1 with Micro-LED sub-pixels.
-*   **Focal Length:** Optimised for 2cm - 30cm projection volume.
-*   **Function:** Shapes individual emitter beams into directional light channels, preparing them for diffraction.
-
-### 3. Diffractive Holographic Film
-*   **Structure:** Nano-scale surface relief gratings (SRG).
-*   **Encoding:** Phase-only spatial light modulation.
-*   **Function:** Encodes depth information by manipulating the phase of the wavefront. This is where the "holographic" interference patterns are generated.
-
-### 4. Micro-Prism Optical Lattice
-*   **Geometry:** Repeating hexagonal lattice of faceted micro-prisms.
-*   **Refractive Index:** Variable ($n = 1.4 - 1.8$).
-*   **Function:** Redirects light rays to specific viewing angles. This enables "Look-Around" parallax, allowing multiple users to see the 3D object from different perspectives.
-
-### 5. Fluorescent Amplification Layer
-*   **Material:** Quantum Dot (QD) or Rare-earth doped phosphors.
-*   **Excitation:** Blue/UV (from emitter array).
-*   **Emission:** Narrow-band RGB.
-*   **Function:** Converts high-energy invisible/blue light into high-intensity visible RGB. This minimizes "ghosting" and increases the perceived clarity of the spatial image.
-
-## Dual-Mode Operation
-To function as a high-end 2D tablet, the SLE incorporates a **Liquid Crystal Polarizer Layer** (integrated within the stack).
-*   **2D Mode:** The polarizer aligns all rays to be perpendicular to the surface, bypassing the diffractive/prism effects for a crisp 2D image.
-*   **3D Mode:** The polarizer is deactivated (or modulated), allowing the SLE layers to shape the light field into 3D space.
-
-## Performance Targets
-| Metric | Target Specification |
-| :--- | :--- |
-| **Spatial Resolution** | > 300 "Spatial Pixels" per inch |
-| **Viewing Angle** | 120-degree horizontal / 90-degree vertical |
-| **Projection Depth** | 2cm to 30cm (Optimal at 15cm) |
-| **Color Gamut** | 100% DCI-P3 |
-| **Refresh Rate** | 120Hz (Spatial), 240Hz (2D) |
-| **Latency** | < 10ms (Photon-to-Motion) |
+## Dual-Mode Operation (2D/3D Hybrid)
+The SLE incorporates a **Liquid Crystal Switching Layer** integrated between the MLA and DHF.
+*   **2D Mode:** The LC layer is energized to act as a wide-angle diffuser, bypassing the diffractive and prism effects for a high-brightness 2D tablet experience.
+*   **3D Mode:** The LC layer is transparent, allowing the structured light field to propagate through the SLE stack.
 
 ---
-*Technical Lead Note: Achieving retina-equivalent spatial resolution requires precise alignment of the MLA and the Emitter Array (sub-micron tolerance).*
+*Technical Note: The alignment of the DHF and MPOL layers is critical. Any deviation >500nm results in visual "shimmer" or loss of 3D stability.*

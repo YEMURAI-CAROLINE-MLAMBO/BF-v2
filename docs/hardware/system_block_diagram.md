@@ -11,7 +11,7 @@ graph TD
     Battery[200Wh All-Solid-State Battery]
     Supercap[Supercapacitor Array]
     Wireless[65W Wireless Charging]
-    SolarDock[External 200W Solar Dock]
+    Wired[100W GaN Fast Charging]
     IPDN[AI-Managed Power Network]
     end
 
@@ -48,7 +48,7 @@ graph TD
     IPDN --> Battery
     Battery --> IPDN
     Wireless --> IPDN
-    SolarDock --> IPDN
+    Wired --> IPDN
     NPU -->|Power Prediction| IPDN
     Supercap --> PMIC
 

@@ -35,7 +35,7 @@ Interaction occurs in the "Step-Out-of-Screen" (SOOS) volume (2cm - 30cm). This 
 For professional field use, the device must maintain constant awareness of its surroundings.
 *   **Global LiDAR:** Long-range (10m) LiDAR for environment scanning and 3D mapping.
 *   **Inertial Measurement Unit (IMU):** 9-axis (Gyro, Accelerometer, Magnetometer) for ultra-stable holographic projection even when the device is in motion.
-*   **Ambient Light Sensor (ALS):** Spectral sensor that automatically adjusts the SLE's fluorescent layer excitation to match environmental color temperatures.
+*   **Ambient Light Sensor (ALS):** Spectral sensor that automatically adjusts the SLE's fluorescent layer excitation and performs real-time gamut shifting via the Snapdragon NPU to maintain contrast in 100,000-lux sunlight.
 
 ## 4. Interaction Modalities (SOOS)
 The combination of HSU processing and SISS sensing allows for complex 3D interaction:

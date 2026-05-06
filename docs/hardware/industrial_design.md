@@ -40,7 +40,7 @@ Spatial rendering and high-intensity Micro-LEDs generate significant thermal ene
 ## Ergonomics and Field Interaction
 *   **Tactile Hard-Keys:** Knurled, cold-weather-optimized physical buttons for primary actions (3D Toggling, Mode Select, Emergency Signal).
 *   **Stylus Bay:** Magnetically coupled, high-precision active stylus that charges from the device.
-*   **Universal Link:** Integrated "Force-Link" mounting system on the rear for modular accessories (tripods, drone controllers, surgical mounts).
+*   **Universal Link:** Integrated "Force-Link" mounting system on the rear for modular accessories (tripods, vehicle docks, surgical mounts).
 
 ---
 *Industrial Design Philosophy: "Rugged Elegance" — The uncompromising intersection of delicate optical science and battlefield durability.*

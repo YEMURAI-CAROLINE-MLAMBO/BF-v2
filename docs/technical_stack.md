@@ -13,7 +13,7 @@ The hardware stack is built around the proprietary **Apex Spatial SoC** and the 
 | :--- | :--- | :--- |
 | **Compute** | **Apex SoC (Snapdragon-Based)** | **Snapdragon 8 Elite** (3nm), 8-core Oryon CPU, Adreno 8-series GPU, Hexagon NPU. |
 | **Synthesis** | **Holographic Synthesis Unit (HSU)** | Dedicated silicon co-processor for 120Hz phase-modulation & light field calculation. |
-| **Display (SLE)** | **Laminated Optical Sandwich** | GaN-on-Si Micro-LEDs, Micro-Lens Array, DHF, MPOL, and QD Fluorescent film. |
+| **Display (SLE)** | **Sunlit Optical Stack** | GaN-on-Si Micro-LEDs (7,500 nits), MLA, DHF, MPOL, and QD Fluorescent film. |
 | **Sensors (SISS)** | **Spatial Interaction Suite** | SR-ToF (Sub-mm), Dual IR Gesture Cams, 10m LiDAR, 9-axis IMU. |
 | **Energy** | **Power Distribution (IPDN)** | 200Wh All-Solid-State Battery (ASSB), 100W GaN Wired / 65W Wireless. |
 | **Chassis** | **MTH Framework** | CNC-machined Magnesium-Titanium Hybrid with IP69K/MIL-STD-810H ratings. |
@@ -51,7 +51,17 @@ BendingForce v2 prioritizes local processing for privacy and latency, while leve
 
 ---
 
-## 5. Manufacturing & Production Stack
+## 5. Sunlight & Thermal Resilience (Sunlit Mode)
+
+BendingForce v2 is engineered to maintain high-fidelity holographic output even in direct 100,000-lux solar environments.
+
+*   **Spectral Matching:** The **Ambient Light Sensor (ALS)** and Snapdragon NPU perform real-time gamut shifting, adjusting the SLE’s emission spectrum to compensate for the white/yellow solar wash, maintaining 1,000,000:1 dynamic contrast.
+*   **Fluorescent Boost:** The **Fluorescent Amplification Layer (FAL)** upconverts Blue/UV emitter photons to highly saturated RGB light at the surface, ensuring the "Step-Out-of-Screen" objects remain vivid and opaque against the sun.
+*   **Active Thermal Shunting:** During sustained 7,500-nit "Sunlit Mode," the **Piezoelectric Cooling** system increases vibration frequency to shunt heat through the Magnesium-Titanium chassis, preventing thermal throttling of the Snapdragon 8 Elite.
+
+---
+
+## 6. Manufacturing & Production Stack
 
 The manufacturing process is designed for high-precision scalability, leveraging advanced material science and lithography.
 
@@ -66,7 +76,7 @@ The manufacturing process is designed for high-precision scalability, leveraging
 
 ---
 
-## 6. Prototyping vs. Production (Pathway)
+## 7. Prototyping vs. Production (Pathway)
 
 | Feature | Phase 1/2 (Prototyping) | Phase 3/Final (Production) |
 | :--- | :--- | :--- |
@@ -78,7 +88,7 @@ The manufacturing process is designed for high-precision scalability, leveraging
 
 ---
 
-## 7. Strategic Alignment: Lenovo/Motorola Integration
+## 8. Strategic Alignment: Lenovo/Motorola Integration
 The BendingForce v2 stack is designed for deep integration into the Lenovo/Motorola professional ecosystem.
 *   **Snapdragon Ecosystem:** By utilizing the **Snapdragon 8 Elite** platform, BendingForce v2 maintains 1:1 parity with Motorola’s flagship mobile hardware. This allows for shared driver optimization and potential integration with **Snapdragon Spaces XR** for hybrid AR/Spatial experiences.
 *   **ThinkShield Compatibility:** ApexOS is designed to integrate with Lenovo's hardware-backed security architecture.
@@ -86,4 +96,4 @@ The BendingForce v2 stack is designed for deep integration into the Lenovo/Motor
 *   **Rugged Reliability:** The MTH chassis and IP69K ratings align with Lenovo’s heritage of durable, mission-critical hardware (ThinkPad/ThinkStation).
 
 ---
-*Technical Stack Document - Confidential - Version 1.1*
+*Technical Stack Document - Confidential - Version 1.2*

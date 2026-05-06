@@ -49,10 +49,11 @@ graph TD
 *   **Refractive Index:** High-index material ($n = 1.78$) for sharp angular redirection.
 *   **Function:** Generates the "Look-Around" effect by directing different light-field slices to different viewing angles.
 
-### 5. Fluorescent Amplification Layer (FAL): Spectral Conversion
+### 5. Fluorescent Amplification Layer (FAL): Spectral Conversion & Sunlight Shield
 *   **Material:** Quantum Dot (QD) or Rare-earth doped phosphors embedded in a high-clarity resin.
 *   **Conversion:** Blue/UV $\rightarrow$ High-saturated RGB.
 *   **Efficiency:** External Quantum Efficiency (EQE) > 90%.
+*   **Sunlight Performance:** The FAL acts as a spectral buffer. By emitting highly saturated RGB light at the final surface stage, it overcomes the "wash-out" effect of 100,000-lux ambient sunlight.
 *   **Function:** Final emission stage. By converting light at the very top of the stack, it eliminates "ghosting" and internal reflections within the lower optical layers.
 
 ## The "Crystal Lattice" Visual Standard

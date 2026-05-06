@@ -3,12 +3,14 @@
 ## Overview
 BendingForce v2 is built on a high-performance, AI-optimized electronics platform designed to manage the immense data throughput required for real-time spatial synthesis and interaction.
 
-## 1. The Core Processing Unit: Apex SoC
-The heart of the tablet is the **Apex Spatial System-on-Chip (SoC)**, featuring:
-*   **High-Performance CPU:** 16-core ARM v9.2 architecture (8 Performance, 8 Efficiency cores).
-*   **Ray-Tracing GPU:** 20-core GPU with dedicated ray-tracing and mesh-shading hardware for spatial rendering.
-*   **Holographic Synthesis Unit (HSU):** A specialized silicon block that transforms 3D depth maps into phase-modulated light field patterns at 120Hz.
-*   **Integrated AI-NPU:** 100 TOPS (Tera Operations Per Second) for real-time sensor fusion, gesture prediction, and image upscaling.
+## 1. The Core Processing Unit: Apex SoC (Snapdragon-Based)
+The heart of the tablet is the **Apex SoC architecture**, powered by the **Snapdragon 8 Elite** mobile platform in tandem with a custom spatial co-processor.
+
+*   **Primary Processor:** **Snapdragon 8 Elite** (3nm node).
+    *   **CPU:** 8-core Qualcomm Oryon architecture.
+    *   **GPU:** Adreno 8-series with hardware-accelerated ray tracing.
+    *   **AI-NPU:** Qualcomm Hexagon processor for real-time sensor fusion and image upscaling.
+*   **Holographic Synthesis Unit (HSU):** A specialized silicon co-processor that transforms 3D depth maps into phase-modulated light field patterns at 120Hz.
 *   **Unified Memory:** 32GB LPDDR5X (up to 64GB in Extreme configurations).
 
 ## 2. The Spatial Interaction Sensor Suite (SISS)

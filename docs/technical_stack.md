@@ -11,8 +11,8 @@ The hardware stack is built around the proprietary **Apex Spatial SoC** and the 
 
 | Layer | Component | Technical Specifications |
 | :--- | :--- | :--- |
-| **Compute** | **Apex Spatial SoC** | 16-core ARM v9.2, 20-core Ray-Tracing GPU, 100 TOPS NPU. |
-| **Synthesis** | **Holographic Synthesis Unit (HSU)** | Dedicated silicon for 120Hz phase-modulation & light field calculation. |
+| **Compute** | **Apex SoC (Snapdragon-Based)** | **Snapdragon 8 Elite** (3nm), 8-core Oryon CPU, Adreno 8-series GPU, Hexagon NPU. |
+| **Synthesis** | **Holographic Synthesis Unit (HSU)** | Dedicated silicon co-processor for 120Hz phase-modulation & light field calculation. |
 | **Display (SLE)** | **Laminated Optical Sandwich** | GaN-on-Si Micro-LEDs, Micro-Lens Array, DHF, MPOL, and QD Fluorescent film. |
 | **Sensors (SISS)** | **Spatial Interaction Suite** | SR-ToF (Sub-mm), Dual IR Gesture Cams, 10m LiDAR, 9-axis IMU. |
 | **Energy** | **Power Distribution (IPDN)** | 200Wh All-Solid-State Battery (ASSB), 100W GaN Wired / 65W Wireless. |
@@ -70,7 +70,7 @@ The manufacturing process is designed for high-precision scalability, leveraging
 
 | Feature | Phase 1/2 (Prototyping) | Phase 3/Final (Production) |
 | :--- | :--- | :--- |
-| **Compute** | NVIDIA Jetson Orin AGX / RTX 4090 | Custom Apex Spatial SoC |
+| **Compute** | NVIDIA Jetson Orin AGX / RTX 4090 | Snapdragon 8 Elite + HSU Co-Processor |
 | **Optics** | Off-the-shelf MLA + High-PPI LCD/OLED | Custom Integrated SLE (Micro-LED) |
 | **Sensing** | Intel RealSense / Ultraleap LM2 | Integrated SISS (ToF/IR/LiDAR) |
 | **OS** | Ubuntu 22.04 + ROS 2 | ApexOS (AOSP-based) |
@@ -79,9 +79,10 @@ The manufacturing process is designed for high-precision scalability, leveraging
 ---
 
 ## 7. Strategic Alignment: Lenovo/Motorola Integration
-The BendingForce v2 stack is designed with modularity and enterprise-ready reliability, making it a natural extension of the Lenovo/Motorola professional ecosystem.
-*   **ThinkShield Compatibility:** ApexOS is designed to integrate with Lenovo's security architecture.
-*   **Ready For (Motorola):** The hardware stack supports advanced desktop-extension modes, allowing the spatial engine to serve as a high-end 3D workstation when docked.
+The BendingForce v2 stack is designed for deep integration into the Lenovo/Motorola professional ecosystem.
+*   **Snapdragon Ecosystem:** By utilizing the **Snapdragon 8 Elite** platform, BendingForce v2 maintains 1:1 parity with Motorola’s flagship mobile hardware. This allows for shared driver optimization and potential integration with **Snapdragon Spaces XR** for hybrid AR/Spatial experiences.
+*   **ThinkShield Compatibility:** ApexOS is designed to integrate with Lenovo's hardware-backed security architecture.
+*   **Ready For (Motorola):** The hardware stack natively supports Motorola's "Ready For" desktop-extension modes, allowing the spatial engine to serve as a high-end 3D holographic workstation when docked or wirelessly connected.
 *   **Rugged Reliability:** The MTH chassis and IP69K ratings align with Lenovo’s heritage of durable, mission-critical hardware (ThinkPad/ThinkStation).
 
 ---

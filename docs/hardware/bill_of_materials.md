@@ -13,7 +13,7 @@ This document outlines the estimated component costs for the **BendingForce v2**
 | **Spatial Light Engine (SLE)** | Micro-LED Array + Optical Stack | $650.00 | $350.00 |
 | &nbsp;&nbsp;*- Micro-LED Display* | *1000+ PPI, 12" Panel* | *$450.00* | *$250.00* |
 | &nbsp;&nbsp;*- Optical Layers* | *MLA, DOE, Prism Lattice, QD Film* | *$200.00* | *$100.00* |
-| **Apex SoC** | 3nm High-Performance Spatial Processor | $280.00 | $220.00 |
+| **Apex SoC (SD 8 Elite)** | Snapdragon 8 Elite + HSU Co-Processor | $280.00 | $220.00 |
 | **Memory & Storage** | 16GB LPDDR5X + 512GB UFS 4.0 | $140.00 | $110.00 |
 | **Interaction & Sensors** | SISS Suite (LiDAR, ToF, IR) | $110.00 | $70.00 |
 | **Housing & Chassis** | CNC Magnesium-Titanium Hybrid | $95.00 | $65.00 |
@@ -26,10 +26,9 @@ This document outlines the estimated component costs for the **BendingForce v2**
 
 | Processor | Manufacturing Node | NPU Performance | Target Architecture |
 | :--- | :--- | :--- | :--- |
-| **Apex SoC (BendingForce)** | **3nm (GAA)** | **100 TOPS** | **Spatial Synthesis (HSU)** |
+| **Snapdragon 8 Elite + HSU** | **3nm** | **80 TOPS + HSU Logic**| **Spatial Computing** |
 | Apple M4 (iPad Pro) | 3nm (N3E) | 38 TOPS | General Productivity |
 | Apple A18 Pro (iPhone 16) | 3nm (N3E) | 35 TOPS | Mobile/Imaging |
-| Snapdragon 8 Elite (Gen 4) | 3nm | 80 TOPS (Total) | General Flagship |
 
 ## 3. Cost Analysis & Strategy
 

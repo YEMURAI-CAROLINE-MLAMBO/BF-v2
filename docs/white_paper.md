@@ -40,8 +40,8 @@ The resulting visual output is defined by the **Crystal Lattice**—a three-dime
 *   **Depth Resolution:** Sub-millimeter Z-axis increments.
 *   **Field of View:** 120° horizontal / 90° vertical.
 
-### 5. Computational Framework: The Holographic Synthesis Unit (HSU)
-Spatial rendering at 120Hz requires specialized hardware acceleration. The **HSU** is a dedicated silicon block within the SoC that performs:
+### 5. Computational Framework: Snapdragon 8 Elite + HSU
+Spatial rendering at 120Hz requires specialized hardware acceleration. The **Holographic Synthesis Unit (HSU)** is a dedicated silicon co-processor paired with the **Snapdragon 8 Elite** that performs:
 1.  **Phase Modulation Calculation:** Translating 3D mesh data into interference patterns.
 2.  **Angular Distribution Mapping:** Assigning pixel data to specific micro-prism facets for parallax.
 3.  **Real-Time Depth-Map Fusion:** Synchronizing the "Step-Out-of-Screen" image with user gesture inputs.

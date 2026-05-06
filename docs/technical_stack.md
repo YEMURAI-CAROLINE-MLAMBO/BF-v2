@@ -7,7 +7,7 @@ The BendingForce v2 Technical Stack is a multi-layered architecture designed to 
 
 ## 2. Hardware Stack (Production-Target)
 
-The hardware stack is built around the proprietary **Apex Spatial SoC** and the **Spatial Light Engine (SLE)**.
+The hardware stack is built around the **Apex SoC (Snapdragon-Based)** architecture and the **Spatial Light Engine (SLE)**.
 
 | Layer | Component | Technical Specifications |
 | :--- | :--- | :--- |
@@ -43,7 +43,7 @@ To ensure both high-performance spatial rendering and broad application compatib
 
 BendingForce v2 prioritizes local processing for privacy and latency, while leveraging cloud resources for massive datasets.
 
-*   **Apex Edge Node:** The device acts as a local compute hub, processing 100 TOPS of AI workloads locally (SISS fusion, HSU patterns).
+*   **Apex Edge Node:** The device acts as a local compute hub, processing 80+ TOPS of AI workloads locally (SISS fusion, HSU patterns).
 *   **Apex Cloud Link:**
     *   **Remote Spatial Rendering:** Optional off-loading of complex simulations (e.g., fluid dynamics or high-poly architectural models) to remote clusters.
     *   **Spatial Asset Library:** A centralized repository for optimized holographic assets and BIM/CAD models.

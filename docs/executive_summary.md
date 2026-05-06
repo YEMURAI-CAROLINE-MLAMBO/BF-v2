@@ -1,7 +1,7 @@
 # Executive Summary: BendingForce v2
 
 ## Vision
-BendingForce v2 is the evolution of resilient computing, moving from the ultra-low-power flexible sheets of v1 to a high-performance **Spatial Light Computing Platform**. It is designed for both professionals (surgeons, engineers, field researchers) and consumers (gamers, entertainment enthusiasts) who require immersive 3D spatial visualization without the encumbrance of AR glasses or VR headsets.
+BendingForce v2 is the evolution of resilient computing, moving from the ultra-low-power flexible sheets of v1 to a high-performance **Spatial Light Computing Platform** powered by the **Snapdragon 8 Elite**. It is designed for both professionals (surgeons, engineers, field researchers) and consumers (gamers, entertainment enthusiasts) who require immersive 3D spatial visualization and multispectral analysis without the encumbrance of AR glasses or VR headsets.
 
 ## The Problem
 Current spatial computing solutions are split between two extremes:
@@ -13,8 +13,9 @@ BendingForce v2 introduces a tablet-class device that projects "near-field" holo
 
 ## Key Technical Innovations
 *   **Spatial Light Engine (SLE):** A multi-layered optical stack that shapes light fields at the sub-pixel level to create parallax and depth.
+*   **Ambient Intelligence:** Real-time environment-aware rendering that "relights" holographic objects to match the actual room lighting.
 *   **Micro-Prism Optical Lattice:** A revolutionary layer that redirects light for multi-angle visibility, enabling collaborative viewing of 3D objects.
-*   **Fluorescent Light Amplification:** Using high-energy blue/UV photons to trigger efficient RGB phosphors, increasing perceived brightness while reducing battery drain.
+*   **Fluorescent Light Amplification:** Using high-energy blue/UV photons to trigger efficient RGB phosphors, increasing perceived brightness (7,500+ nits) for sunlight readability.
 *   **Ruggedized Performance:** Built to MIL-STD-810H standards, ensuring spatial computing is available in the most demanding field environments.
 
 ## Target Markets

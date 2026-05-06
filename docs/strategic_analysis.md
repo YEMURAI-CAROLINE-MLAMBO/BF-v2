@@ -33,7 +33,7 @@ These are "rule-breaking" areas where BendingForce v2 may encounter friction, le
 | :--- | :--- |
 | **Inflection Management** | Aggressive R&D in Micro-LED yields and developer SDKs to ride the adoption wave. |
 | **Infraction Mitigation** | "Privacy by Design" for sensors, strict optical safety testing, and proactive patent filing for the SLE. |
-| **Thermal Risk Mgmt** | Pivot from integrated solar skin to external "Solar-Permissive" docking to avoid chassis overheating infractions. |
+| **Thermal Risk Mgmt** | High-efficiency piezoelectric active cooling and MTH heat-shunting to manage high-brightness "Sunlit Mode" thermal loads. |
 
 ---
 *BendingForce v2: Navigating the future by anticipating both its opportunities and its obstacles.*

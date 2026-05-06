@@ -28,7 +28,7 @@ Unlike traditional tablets that compete on price-per-spec, BendingForce v2 comma
 
 ### BendingForce v2 vs. Apple (The Feature/Status Competitor)
 *   **Edge:** No glasses required for spatial computing (Apple Vision Pro requires an HMD). Rugged field-readiness. **All-Solid-State Power:** First mobile device powered by 500Wh/kg ASSB technology, offering 5x the energy density and >5x the capacity of iPad Pro M4 (200Wh vs. ~39Wh).
-*   **Parity:** Build quality, custom silicon performance (Apex SoC vs. Apple M4), and premium brand aesthetic.
+*   **Parity:** Build quality, custom silicon performance (Snapdragon 8 Elite + HSU vs. Apple M4), and premium brand aesthetic.
 *   **Strategy:** Positioning as the "Tablet from the Future" that does what an iPad cannot.
 
 ## 5. The "Pocket-to-Spatial" Performance Gap
@@ -37,7 +37,7 @@ While the BendingForce v2 is a tablet-class device, its spatial synthesis and re
 | Metric | BendingForce v2 | iPhone 16 Pro Max (A18 Pro) | Galaxy S24 Ultra (SD 8 Gen 3) |
 | :--- | :--- | :--- | :--- |
 | **Holographic Output** | **Yes (Crystal Lattice)** | No (2D Only) | No (2D Only) |
-| **AI (NPU) Performance** | **100 TOPS (Integrated)** | 35 TOPS | 18 TOPS |
+| **AI (NPU) Performance** | **80 TOPS + HSU Logic** | 35 TOPS | 18 TOPS |
 | **Battery Capacity** | **200Wh (ASSB)** | ~18Wh (Li-ion) | ~19Wh (Li-ion) |
 | **Display Brightness** | **5,000+ Nits (Spatial)** | 2,000 Nits (Peak) | 2,600 Nits (Peak) |
 | **Ruggedization** | **IP69K / MIL-STD-810H** | IP68 | IP68 |

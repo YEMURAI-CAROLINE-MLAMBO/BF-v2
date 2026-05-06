@@ -31,6 +31,10 @@ Interaction occurs in the "Step-Out-of-Screen" (SOOS) volume (2cm - 30cm). This 
 *   **Technology:** Solid-state ultrasonic transceivers embedded in the chassis.
 *   **Purpose:** Provides redundant hand tracking in high-glare environments (direct sunlight) where IR sensors may struggle.
 
+### 2.4 Multispectral Sensing Core
+*   **LWIR Micro-Bolometer:** 160x120 thermal sensor for heat-signature visualization.
+*   **SWIR Sensor:** Short-Wave Infrared sensor for vision through atmospheric obscurants (smoke, fog).
+
 ## 3. Environmental Perception
 For professional field use, the device must maintain constant awareness of its surroundings.
 *   **Global LiDAR:** Long-range (10m) LiDAR for environment scanning and 3D mapping.

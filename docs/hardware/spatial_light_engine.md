@@ -27,7 +27,7 @@ graph TD
 ### 1. Primary Emitter: GaN-on-Silicon Micro-LED
 *   **Technology:** Monolithic Gallium Nitride (GaN) on Silicon.
 *   **Resolution:** 8000 x 6000 (Native >1000 PPI).
-*   **Wavelengths:** Narrow-band Blue (450nm) and Near-UV (395nm) for phosphor/QD excitation.
+*   **Wavelengths:** Multi-rail narrow-band Blue (450nm), Near-UV (395nm), and Infrared (850nm) for excitation and scientific emission.
 *   **Peak Radiance:** >1,000,000 cd/m² (at emitter level) to ensure high visibility after stack attenuation.
 *   **Switching Speed:** < 1 microsecond (essential for high-frequency 3D frame interleaving).
 
@@ -54,6 +54,7 @@ graph TD
 *   **Conversion:** Blue/UV $\rightarrow$ High-saturated RGB.
 *   **Efficiency:** External Quantum Efficiency (EQE) > 90%.
 *   **Sunlight Performance:** The FAL acts as a spectral buffer. By emitting highly saturated RGB light at the final surface stage, it overcomes the "wash-out" effect of 100,000-lux ambient sunlight.
+*   **Spectral-Pure Mode:** A software-controlled state that optimizes the FAL's output to eliminate high-energy blue peaks (415-455nm) for surgical or long-duration use, shifting the spectrum toward circadian-neutral wavelengths.
 *   **Function:** Final emission stage. By converting light at the very top of the stack, it eliminates "ghosting" and internal reflections within the lower optical layers.
 
 ## The "Crystal Lattice" Visual Standard

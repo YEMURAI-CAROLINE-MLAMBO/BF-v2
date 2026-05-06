@@ -14,7 +14,7 @@ The hardware stack is built around the proprietary **Apex Spatial SoC** and the 
 | **Compute** | **Apex SoC (Snapdragon-Based)** | **Snapdragon 8 Elite** (3nm), 8-core Oryon CPU, Adreno 8-series GPU, Hexagon NPU. |
 | **Synthesis** | **Holographic Synthesis Unit (HSU)** | Dedicated silicon co-processor for 120Hz phase-modulation & light field calculation. |
 | **Display (SLE)** | **Sunlit Optical Stack** | GaN-on-Si Micro-LEDs (7,500 nits), MLA, DHF, MPOL, and QD Fluorescent film. |
-| **Sensors (SISS)** | **Spatial Interaction Suite** | SR-ToF, Dual IR Cams, 10m LiDAR, 9-axis IMU, **Spectral ALS Array**. |
+| **Sensors (SISS)** | **Spatial Interaction Suite** | SR-ToF, Dual IR Cams, 10m LiDAR, 9-axis IMU, **SWIR/Thermal sensors**. |
 | **Energy** | **Power Distribution (IPDN)** | 200Wh All-Solid-State Battery (ASSB), 100W GaN Wired / 65W Wireless. |
 | **Chassis** | **MTH Framework** | CNC-machined Magnesium-Titanium Hybrid with IP69K/MIL-STD-810H ratings. |
 
@@ -70,7 +70,24 @@ BendingForce v2 is engineered for "Environmental Realism," ensuring holographic 
 
 ---
 
-## 6. Manufacturing & Production Stack
+## 6. Multispectral & Scientific Capabilities
+
+Beyond visible light, BendingForce v2 acts as a multispectral spatial tool, capable of visualizing and emitting data across a broad electromagnetic range.
+
+### 6.1 Multispectral Spatial Visualization
+*   **Thermal/IR Fusion:** The SISS integrates a **Long-Wave Infrared (LWIR)** micro-bolometer. The Snapdragon NPU fuses thermal data with the LiDAR depth map, projecting a 3D "Step-Out-of-Screen" thermal mesh, essential for industrial inspection, search & rescue, and medical diagnostics.
+*   **SWIR Perception:** Short-Wave Infrared (SWIR) sensing allows for visualization through fog, smoke, and certain plastics, with the data rendered as high-contrast spatial overlays.
+
+### 6.2 Scientific & Medical Emission
+*   **Narrow-Band Precision:** The GaN-on-Si Micro-LED array can be tuned for narrow-band spectral emission. This enables the device to be used for specialized medical applications (e.g., targeted blue-light therapy or IR-based tissue perfusion analysis) directly within the spatial volume.
+*   **Spectral-Pure Mode:** A software-defined mode that eliminates specific wavelengths (e.g., peak high-energy blue) for high-precision eye safety during long-duration professional use.
+
+### 6.3 Holographic Spectroscopy
+*   **Material ID:** By using the SLE as a structured light source and the **Spectral ALS Array** as a receiver, the device can perform non-contact spectroscopy to identify materials, chemicals, or biological markers, visualizing the molecular breakdown as a 3D spatial data plot.
+
+---
+
+## 7. Manufacturing & Production Stack
 
 The manufacturing process is designed for high-precision scalability, leveraging advanced material science and lithography.
 
@@ -85,7 +102,7 @@ The manufacturing process is designed for high-precision scalability, leveraging
 
 ---
 
-## 7. Prototyping vs. Production (Pathway)
+## 8. Prototyping vs. Production (Pathway)
 
 | Feature | Phase 1/2 (Prototyping) | Phase 3/Final (Production) |
 | :--- | :--- | :--- |
@@ -97,7 +114,7 @@ The manufacturing process is designed for high-precision scalability, leveraging
 
 ---
 
-## 8. Strategic Alignment: Lenovo/Motorola Integration
+## 9. Strategic Alignment: Lenovo/Motorola Integration
 The BendingForce v2 stack is designed for deep integration into the Lenovo/Motorola professional ecosystem.
 *   **Snapdragon Ecosystem:** By utilizing the **Snapdragon 8 Elite** platform, BendingForce v2 maintains 1:1 parity with Motorola’s flagship mobile hardware. This allows for shared driver optimization and potential integration with **Snapdragon Spaces XR** for hybrid AR/Spatial experiences.
 *   **ThinkShield Compatibility:** ApexOS is designed to integrate with Lenovo's hardware-backed security architecture.
@@ -105,4 +122,4 @@ The BendingForce v2 stack is designed for deep integration into the Lenovo/Motor
 *   **Rugged Reliability:** The MTH chassis and IP69K ratings align with Lenovo’s heritage of durable, mission-critical hardware (ThinkPad/ThinkStation).
 
 ---
-*Technical Stack Document - Confidential - Version 1.3*
+*Technical Stack Document - Confidential - Version 1.4*

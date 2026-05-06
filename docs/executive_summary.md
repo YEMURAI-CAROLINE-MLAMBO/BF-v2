@@ -25,10 +25,10 @@ BendingForce v2 introduces a tablet-class device that projects "near-field" holo
 *   **Field Science:** 3D terrain reconstruction from LiDAR/Satellite data in the field.
 *   **Defense & Emergency Response:** Real-time 3D tactical maps for situational awareness.
 
-## Roadmap
-*   **Phase 1:** Optical validation of the SLE layers.
-*   **Phase 2:** Bench-top prototype of the light engine and rendering pipeline.
-*   **Phase 3:** Fully integrated, ruggedized BendingForce v2 tablet.
+## Strategic Roadmap (Lenovo/Motorola Alignment)
+*   **Phase 1:** Optical validation of the Laminated Optical Sandwich.
+*   **Phase 2:** Integration with the **Snapdragon 8 Elite** development platform and HSU synthesis.
+*   **Phase 3:** Final assembly of the **Ruggedized Field Edition** using MTH chassis.
 
 ---
 *BendingForce v2: Bringing Digital Content into the Physical Dimension.*

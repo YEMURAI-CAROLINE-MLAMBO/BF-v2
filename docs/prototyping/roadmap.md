@@ -35,8 +35,8 @@ Moving from the BendingForce v2 conceptual architecture to a physical prototype 
 **Goal:** Integrate the SLE and electronics into a tablet form factor.
 
 ### Custom Components
-*   **Custom MLA/Prism Lattice:** Collaboration with nano-fabrication partners (e.g., **EV Group** for Nano-imprint Lithography).
-*   **Custom SoC:** Evaluation of high-end mobile SoCs (Qualcomm Snapdragon 8 Gen series or MediaTek Dimensity) with custom firmware for SLE control.
+*   **Custom MLA/Prism Lattice:** Collaboration with nano-fabrication partners (e.g., **EV Group** for Nano-imprint Lithography). Yield optimization utilizes **Step-and-Repeat NIL** to achieve sub-500nm alignment precision.
+*   **Snapdragon Integration:** Finalizing the **Snapdragon 8 Elite** firmware and custom HSU co-processor logic for mass production.
 
 ## Prototyping Roadmap
 | Phase | Focus | Key Deliverable |

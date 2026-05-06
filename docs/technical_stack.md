@@ -29,8 +29,8 @@ To ensure both high-performance spatial rendering and broad application compatib
 *   **Runtime:** Android Open Source Project (AOSP) base to allow native execution of standard 2D Android applications alongside spatial workloads.
 
 ### 3.2 Spatial Middleware: SpatialCore SDK
-*   **HSU Drivers:** Proprietary low-level drivers that interface directly between the GPU/NPU and the Holographic Synthesis Unit.
-*   **Spatial Runtime:** Manages the "Step-Out-of-Screen" volume, handling object occlusion, lighting, and multi-user parallax correction.
+*   **HSU Drivers:** Proprietary low-level drivers that utilize **Unified Spatial Memory** (Zero-Copy) between the Snapdragon 8 Elite and the HSU, eliminating the latency of memory transfers for high-poly 3D assets.
+*   **Spatial Runtime:** Manages the "Step-Out-of-Screen" volume. Includes a **Predictive Rendering Engine** that uses the IMU and NPU to predict user head/eye movement, achieving sub-10ms "photon-to-motion" latency.
 *   **Gesture Engine:** AI-driven skeletal tracking and intent prediction using the SISS data.
 
 ### 3.3 Application Layer

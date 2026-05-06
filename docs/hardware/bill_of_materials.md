@@ -6,23 +6,33 @@ This document outlines the estimated component costs for the **BendingForce v2**
 **Volume Assumption:** Initial Pilot Run (1,000 – 5,000 units).
 **Strategy:** High R&D investment to drive down component costs for future mass production.
 
-## 1. Bill of Materials (Estimated)
+## 1. Bill of Materials: Optimization Tiers
 
-| Component Category | Key Specifications | Pilot Cost (Est.) | Mass Prod. Target |
+| Component Category | "Standard" Tier (Est.) | "Pro/Field" Tier (Est.) | Mass Prod. Target (Scale) |
 | :--- | :--- | :--- | :--- |
-| **Spatial Light Engine (SLE)** | Micro-LED Array + Optical Stack | $650.00 | $350.00 |
-| &nbsp;&nbsp;*- Micro-LED Display* | *1000+ PPI, 12" Panel* | *$450.00* | *$250.00* |
-| &nbsp;&nbsp;*- Optical Layers* | *MLA, DOE, Prism Lattice, QD Film* | *$200.00* | *$100.00* |
-| **Apex SoC (SD 8 Elite)** | Snapdragon 8 Elite + HSU Co-Processor | $280.00 | $220.00 |
+| **Spatial Light Engine (SLE)** | $450.00 (Mini-LED Hybrid) | $650.00 (Pure Micro-LED) | $320.00 |
+| &nbsp;&nbsp;*- Display Backplane* | *$300.00 (1000 PPI)* | *$450.00 (2000+ PPI)* | *$220.00* |
+| &nbsp;&nbsp;*- Optical Layers* | *$150.00 (MLA/DHF)* | *$200.00 (Full LOS)* | *$100.00* |
+| **Apex SoC (SD 8 Elite)** | $240.00 (Standard) | $280.00 (Extreme) | $210.00 |
 | **Memory & Storage** | 16GB LPDDR5X + 512GB UFS 4.0 | $140.00 | $110.00 |
 | **Interaction & Sensors** | SISS Suite (LiDAR, ToF, IR) | $110.00 | $70.00 |
 | **Housing & Chassis** | CNC Magnesium-Titanium Hybrid | $95.00 | $65.00 |
 | **Power System** | 200Wh All-Solid-State (ASSB) + IPDN | $250.00 | $120.00 |
 | **Connectivity & Audio** | 5G, Wi-Fi 7, Spatial Audio Array | $50.00 | $35.00 |
 | **Assembly & Testing** | Precision alignment & IP69K sealing | $110.00 | $65.00 |
-| **Total Estimated BOM** | | **$1,495.00** | **$955.00** |
+| **Total Estimated BOM** | **$1,225.00** | **$1,495.00** | **$910.00** |
 
-## 2. Competitive Performance Benchmarks (SoC)
+## 2. Cost Optimization Roadmap
+
+### 2.1 The "Standard" Hybrid Strategy
+To achieve the **$1,199 MSRP** for the Standard edition, BendingForce v2 utilizes a **Mini-LED / Micro-LED Hybrid** approach for the pilot phase. This allows for high-quality spatial imagery at a significantly lower cost while the custom pure-Micro-LED yields mature.
+
+### 2.2 Yield-Driven Reduction
+The primary cost driver is the **Laminated Optical Sandwich (LOS)**. Optimization focuses on:
+*   **Monolithic Integration:** Moving from seven laminated sheets to a three-layer integrated module using Step-and-Repeat Nano-imprint Lithography (NIL).
+*   **Scale Amortization:** Leveraging Motorola/Lenovo’s existing supply chain for the Snapdragon 8 Elite and memory modules to achieve immediate volume discounts.
+
+## 3. Competitive Performance Benchmarks (SoC)
 
 | Processor | Manufacturing Node | NPU Performance | Target Architecture |
 | :--- | :--- | :--- | :--- |

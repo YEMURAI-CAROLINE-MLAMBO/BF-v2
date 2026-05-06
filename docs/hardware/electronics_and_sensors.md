@@ -11,7 +11,7 @@ The heart of the tablet is the **Apex SoC architecture**, powered by the **Snapd
     *   **GPU:** Adreno 8-series with hardware-accelerated ray tracing.
     *   **AI-NPU:** Qualcomm Hexagon processor for real-time sensor fusion and image upscaling.
 *   **Holographic Synthesis Unit (HSU):** A specialized silicon co-processor that transforms 3D depth maps into phase-modulated light field patterns at 120Hz.
-*   **Unified Memory:** 32GB LPDDR5X (up to 64GB in Extreme configurations).
+*   **Unified Spatial Memory (Zero-Copy):** 32GB LPDDR5X (up to 64GB in Extreme configurations). This architecture allows the HSU to access the Snapdragon’s GPU buffers directly, eliminating bus latency.
 
 ## 2. The Spatial Interaction Sensor Suite (SISS)
 Interaction occurs in the "Step-Out-of-Screen" (SOOS) volume (2cm - 30cm). This is facilitated by three primary sensor modalities.
@@ -56,7 +56,7 @@ The combination of HSU processing and SISS sensing allows for complex 3D interac
 ## 6. Power and Battery System
 *   **Primary Battery:** 200Wh All-Solid-State Battery (ASSB) for high energy density and safety in extreme conditions.
 *   **Charging:** 100W Fast Wired / 65W Wireless Qi2 Charging.
-*   **IPDN (Intelligent Power Distribution Network):** AI-managed power delivery that optimizes energy between the SoC and the high-draw SLE stack.
+*   **IPDN (Intelligent Power Distribution Network):** AI-managed power delivery. The Snapdragon NPU predicts spatial rendering loads and dynamically shunts power between the CPU/GPU and the high-draw Micro-LED array, optimizing for a 12-hour mixed-use battery life.
 
 ---
 *Electronics Engineering Lead Note: The HSU-to-SLE data bus uses a proprietary optical interconnect to handle the 1.2 Tbps bandwidth required for uncompressed 120Hz spatial frames.*

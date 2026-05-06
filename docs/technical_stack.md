@@ -14,7 +14,7 @@ The hardware stack is built around the proprietary **Apex Spatial SoC** and the 
 | **Compute** | **Apex SoC (Snapdragon-Based)** | **Snapdragon 8 Elite** (3nm), 8-core Oryon CPU, Adreno 8-series GPU, Hexagon NPU. |
 | **Synthesis** | **Holographic Synthesis Unit (HSU)** | Dedicated silicon co-processor for 120Hz phase-modulation & light field calculation. |
 | **Display (SLE)** | **Sunlit Optical Stack** | GaN-on-Si Micro-LEDs (7,500 nits), MLA, DHF, MPOL, and QD Fluorescent film. |
-| **Sensors (SISS)** | **Spatial Interaction Suite** | SR-ToF (Sub-mm), Dual IR Gesture Cams, 10m LiDAR, 9-axis IMU. |
+| **Sensors (SISS)** | **Spatial Interaction Suite** | SR-ToF, Dual IR Cams, 10m LiDAR, 9-axis IMU, **Spectral ALS Array**. |
 | **Energy** | **Power Distribution (IPDN)** | 200Wh All-Solid-State Battery (ASSB), 100W GaN Wired / 65W Wireless. |
 | **Chassis** | **MTH Framework** | CNC-machined Magnesium-Titanium Hybrid with IP69K/MIL-STD-810H ratings. |
 
@@ -51,13 +51,22 @@ BendingForce v2 prioritizes local processing for privacy and latency, while leve
 
 ---
 
-## 5. Sunlight & Thermal Resilience (Sunlit Mode)
+## 5. Ambient Intelligence & Sunlight Resilience
 
-BendingForce v2 is engineered to maintain high-fidelity holographic output even in direct 100,000-lux solar environments.
+BendingForce v2 is engineered for "Environmental Realism," ensuring holographic objects interact naturally with surrounding light, from pitch-dark rooms to 100,000-lux solar environments.
 
-*   **Spectral Matching:** The **Ambient Light Sensor (ALS)** and Snapdragon NPU perform real-time gamut shifting, adjusting the SLE’s emission spectrum to compensate for the white/yellow solar wash, maintaining 1,000,000:1 dynamic contrast.
-*   **Fluorescent Boost:** The **Fluorescent Amplification Layer (FAL)** upconverts Blue/UV emitter photons to highly saturated RGB light at the surface, ensuring the "Step-Out-of-Screen" objects remain vivid and opaque against the sun.
-*   **Active Thermal Shunting:** During sustained 7,500-nit "Sunlit Mode," the **Piezoelectric Cooling** system increases vibration frequency to shunt heat through the Magnesium-Titanium chassis, preventing thermal throttling of the Snapdragon 8 Elite.
+### 5.1 Environment-Aware Rendering
+*   **Spatial Relighting:** The **Spectral ALS Array** captures the room's ambient color temperature and directional light sources. The Snapdragon NPU applies this data to the 3D assets in real-time, allowing holographic objects to be "lit" by the actual environment (e.g., a 3D model reflecting the warm glow of a nearby lamp).
+*   **Adaptive Volumetric Transparency:** Object opacity is dynamically adjusted based on ambient contrast. In low light, objects appear solid and dense; in bright light, they shift to a high-saturation "ethereal" state to maintain visibility without blinding the user.
+*   **Ambient Sync (White Point Matching):** Similar to advanced 2D displays, the spatial lattice white point is synchronized with the environment's ambient light to reduce eye strain and enhance the illusion of physical presence.
+
+### 5.2 Sunlit Mode & Thermal Resilience
+*   **Spectral Gamut Shifting:** In direct sunlight, the system performs real-time gamut shifting to compensate for solar wash, maintaining a 1,000,000:1 perceived dynamic contrast.
+*   **Fluorescent Surface Boost:** The **Fluorescent Amplification Layer (FAL)** upconverts Blue/UV emitter photons at the surface, ensuring the "Step-Out-of-Screen" objects remain vivid and opaque against the sun.
+*   **Active Thermal Shunting:** During sustained high-brightness "Sunlit Mode" (7,500 nits), the **Piezoelectric Cooling** system shunts heat through the MTH chassis to prevent thermal throttling.
+
+### 5.3 Hybrid-Passive Energy Mode
+*   **Ambient Illumination:** In high-light environments, the SLE can transition to a "Hybrid-Passive" state, leveraging external ambient light via a reflective internal layer to illuminate 2D text or static 3D maps, significantly extending battery life.
 
 ---
 
@@ -96,4 +105,4 @@ The BendingForce v2 stack is designed for deep integration into the Lenovo/Motor
 *   **Rugged Reliability:** The MTH chassis and IP69K ratings align with Lenovo’s heritage of durable, mission-critical hardware (ThinkPad/ThinkStation).
 
 ---
-*Technical Stack Document - Confidential - Version 1.2*
+*Technical Stack Document - Confidential - Version 1.3*

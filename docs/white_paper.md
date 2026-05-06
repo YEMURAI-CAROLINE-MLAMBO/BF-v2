@@ -8,7 +8,7 @@ BendingForce v2 represents a paradigm shift in mobile computing, transitioning f
 The core innovation of the BendingForce platform is the manipulation of light through complex, layered materials.
 
 *   **BendingForce v1 (The $20 Computer):** Focused on passive light manipulation (ambient light, e-paper, lenticular optics) in a flexible, ultra-thin polymer form factor.
-*   **BendingForce v2 (The Spatial Tablet):** Employs an active, high-intensity **Micro-LED** array within a sophisticated **Laminated Optical Sandwich**. While the chassis is a rigid Magnesium-Titanium hybrid for ruggedization, the display assembly retains the "sheet-like" heritage of v1—a series of specialized films (Diffractive, Prism, and Fluorescent) laminated with sub-micron precision.
+*   **BendingForce v2 (The Spatial Tablet):** Employs an active, high-intensity **Micro-LED** array within a sophisticated **Laminated Optical Sandwich**. BendingForce v2 bridges the v1 heritage by incorporating **Ambient Intelligence**—the ability to use passive environmental light for ultra-low-power visualization (Hybrid-Passive Mode) while simultaneously capturing ambient light vectors to "relight" holographic objects for total environmental realism. While the chassis is a rigid Magnesium-Titanium hybrid, the display assembly remains a series of specialized laminated films.
 
 ### 3. The Spatial Light Engine (SLE) Architecture
 The SLE is a five-layer optical pipeline designed to transform raw pixel data into a coherent volumetric light field.

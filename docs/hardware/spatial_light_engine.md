@@ -61,10 +61,12 @@ graph TD
 *   **Depth (Z-axis) Resolution:** 128 layers in the 2cm-30cm volume.
 *   **Point Coherence:** High-frequency phase modulation ensures that objects appear solid and stable from any viewing angle.
 
-## Dual-Mode Operation (2D/3D Hybrid)
-The SLE incorporates a **Liquid Crystal Switching Layer** integrated between the MLA and DHF.
-*   **2D Mode:** The LC layer is energized to act as a wide-angle diffuser, bypassing the diffractive and prism effects for a high-brightness 2D tablet experience.
-*   **3D Mode:** The LC layer is transparent, allowing the structured light field to propagate through the SLE stack.
+## Multi-Mode Operation (2D/3D/Hybrid)
+The SLE incorporates a **Liquid Crystal Switching Layer** and a **Passive Reflection Layer** integrated between the MLA and DHF.
+
+*   **2D Mode:** The LC layer acts as a wide-angle diffuser, bypassing the diffractive and prism effects for a high-brightness 2D tablet experience.
+*   **3D Mode (Active):** The LC layer is transparent, allowing the structured light field from the Micro-LED array to propagate through the SLE stack.
+*   **Hybrid-Passive Mode:** In high-ambient environments, the LC layer is modulated to allow external light to hit the **Passive Reflection Layer**. This reflected light is then structured by the MPOL/DHF layers, allowing low-power visualization of 2D/3D data (e.g., e-paper style readability) without fully powering the Micro-LED emitter array.
 
 ---
 *Technical Note: The alignment of the DHF and MPOL layers is critical. Any deviation >500nm results in visual "shimmer" or loss of 3D stability.*

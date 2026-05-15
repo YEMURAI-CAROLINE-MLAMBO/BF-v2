@@ -9,10 +9,15 @@ This document outlines the full system architecture for the BendingForce v2 Spat
 graph TD
     subgraph "Power Management (Apex IPDN)"
     Battery[200Wh All-Solid-State Battery]
+    ForcePack[Apex Force-Pack +150Wh]
     Supercap[Supercapacitor Array]
     Wireless[65W Wireless Charging]
-    SolarDock[External 200W Solar Dock]
     IPDN[AI-Managed Power Network]
+    end
+
+    subgraph "Thermal Management"
+    Cooling[Piezoelectric Active Cooling]
+    ThermalSensors[Thermal Sensor Grid]
     end
 
     subgraph "Main Processor (SoC)"
@@ -47,10 +52,13 @@ graph TD
 
     IPDN --> Battery
     Battery --> IPDN
+    ForcePack --> IPDN
     Wireless --> IPDN
-    SolarDock --> IPDN
     NPU -->|Power Prediction| IPDN
-    Supercap --> PMIC
+    Supercap --> IPDN
+
+    ThermalSensors --> IPDN
+    IPDN --> Cooling
 
     ToF --> NPU
     IR --> NPU

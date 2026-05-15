@@ -2,7 +2,9 @@
 ## Technical White Paper & Final Specifications
 
 ### 1. Executive Summary
-BendingForce v2 represents a paradigm shift in mobile computing, transitioning from the two-dimensional constraints of traditional displays to a high-fidelity, three-dimensional "Step-Out-of-Screen" (SOOS) environment. Building on the foundation of BendingForce v1—a $20 flexible, ultra-low-power computing sheet—v2 evolves the "laminated optical stack" philosophy into a premium, ruggedized spatial computing platform. By leveraging the proprietary **Spatial Light Engine (SLE)**, BendingForce v2 projects stable, interactive holographic imagery between 2cm and 30cm above the device surface, requiring no head-mounted hardware.
+BendingForce v2 represents a paradigm shift in mobile computing, transitioning from the two-dimensional constraints of traditional displays to a high-fidelity, three-dimensional "Step-Out-of-Screen" (SOOS) environment. Building on the foundation of BendingForce v1—a $20 flexible, ultra-low-power computing sheet—v2 evolves the "laminated optical stack" philosophy into a premium, ruggedized spatial computing platform.
+
+By leveraging the proprietary **Spatial Light Engine (SLE)**, BendingForce v2 projects stable, interactive holographic imagery into the air—utilizing the atmosphere above the device as an **uninterrupted canvas**. Just as lightning uses air as a conductor for energy, BendingForce v2 uses it as a medium for light, allowing images to float between 2cm and 30cm above the device surface without requiring head-mounted hardware.
 
 ### 2. Design Evolution: From Flexible Sheet to Laminated Stack
 The core innovation of the BendingForce platform is the manipulation of light through complex, layered materials.

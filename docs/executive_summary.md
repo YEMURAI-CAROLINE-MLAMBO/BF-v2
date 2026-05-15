@@ -9,7 +9,9 @@ Current spatial computing solutions are split between two extremes:
 2.  **Traditional 2D Displays:** Highly portable but incapable of conveying true depth, critical for complex 3D data (medical imaging, mechanical design, terrain mapping).
 
 ## The Solution: Step-Out-of-Screen (SOOS)
-BendingForce v2 introduces a tablet-class device that projects "near-field" holographic images. These images appear to float between **2cm and 30cm** above the device surface, allowing for natural, naked-eye 3D interaction while retaining the ability to serve as a high-end 2D workstation.
+BendingForce v2 introduces a tablet-class device that treats the air above it as an **uninterrupted canvas**. Just as lightning uses the air as a conductor for energy, our technology uses the atmospheric volume above the device to conduct and display light in 3D.
+
+These "Step-Out-of-Screen" images appear to float between **2cm and 30cm** above the device surface, allowing for natural, naked-eye 3D interaction. By utilizing the air as a canvas, we break the "unnatural" constraint of the 2D screen, bringing imagery into the physical space we inhabit every day.
 
 ## Key Technical Innovations
 *   **Spatial Light Engine (SLE):** A multi-layered optical stack that shapes light fields at the sub-pixel level to create parallax and depth.

@@ -1,4 +1,5 @@
 # Formal Invention Description: BendingForce v2
+**Lead Inventor:** Yemurai Caroline Mlambo
 
 ## 1. Field of the Invention
 The present invention relates generally to spatial computing and, more particularly, to a mobile computing device capable of generating near-field holographic imagery above a display surface while maintaining traditional two-dimensional display functionality.
@@ -7,7 +8,7 @@ The present invention relates generally to spatial computing and, more particula
 Conventional spatial computing requires head-mounted displays (HMDs) or large, stationary volumetric systems. These solutions suffer from user isolation, physical fatigue, and limited portability. Furthermore, existing mobile displays are confined to 2D screen surfaces, unable to convey true depth or "look-around" parallax necessary for complex 3D data visualization in medical, engineering, and field environments.
 
 ## 3. Summary of the Invention
-The present invention, the **BendingForce v2 Spatial Light Engine (SLE)**, solves these problems by providing a multi-layered optical stack that shapes emitted photons into a coherent **Crystal Lattice** light field. This allows three-dimensional objects to appear between 2cm and 30cm above the device surface ("Step-Out-of-Screen" effect) to the naked eye, while the device remains fully functional as a high-performance 2D tablet.
+The present invention, the **BendingForce v2 Spatial Light Engine (SLE)** developed by Yemurai Caroline Mlambo, solves these problems by providing a multi-layered optical stack that treats the air above the device as an **uninterrupted canvas**. By shaping emitted photons into a coherent **Crystal Lattice** light field, the system uses the air as a conductor for spatial light. This allows three-dimensional objects to appear between 2cm and 30cm above the device surface ("Step-Out-of-Screen" effect) to the naked eye, while the device remains fully functional as a high-performance 2D tablet.
 
 ## 4. Detailed Description of the Preferred Embodiment
 

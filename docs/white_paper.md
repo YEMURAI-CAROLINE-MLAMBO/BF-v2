@@ -22,15 +22,19 @@ The SLE is a five-layer optical pipeline designed to transform raw pixel data in
 *   **Material:** Nano-imprinted high-index polymer.
 *   **Function:** Collimates light from individual sub-pixels into directional beams, ensuring angular precision before entering the diffraction phase.
 
-#### 3.3 Layer 3: Diffractive Holographic Film (DHF)
+#### 3.3 Layer 3: Liquid Crystal Switching Layer (2D/3D Mode)
+*   **Technology:** High-speed Liquid Crystal (LC) Switch.
+*   **Function:** Toggles the device between a high-brightness 2D tablet mode (acting as a wide-angle diffuser) and a 3D spatial mode (becoming transparent to allow the structured light field to propagate).
+
+#### 3.4 Layer 4: Diffractive Holographic Film (DHF)
 *   **Structure:** Nano-scale Surface Relief Gratings (SRG).
 *   **Function:** Modulates the phase of the wavefront. This layer encodes the depth information by creating controlled interference patterns, allowing the "holographic" reconstruction of 3D objects.
 
-#### 3.4 Layer 4: Micro-Prism Optical Lattice (MPOL)
+#### 3.5 Layer 5: Micro-Prism Optical Lattice (MPOL)
 *   **Geometry:** A hexagonal lattice of faceted micro-prisms (Refractive index $n \approx 1.6 - 1.8$).
 *   **Function:** Redirects light rays to specific viewing zones, enabling "Look-Around" parallax. Multiple observers can view the same 3D object from different perspectives simultaneously.
 
-#### 3.5 Layer 5: Fluorescent Amplification Layer (FAL)
+#### 3.6 Layer 6: Fluorescent Amplification Layer (FAL)
 *   **Material:** Quantum Dot (QD) / Rare-earth doped phosphor film.
 *   **Function:** Absorbs high-energy blue/UV photons from the emitter and re-emits them as saturated RGB light. This upconversion increases perceived brightness by up to 40% while reducing overall power consumption.
 
@@ -40,11 +44,21 @@ The resulting visual output is defined by the **Crystal Lattice**—a three-dime
 *   **Depth Resolution:** Sub-millimeter Z-axis increments.
 *   **Field of View:** 120° horizontal / 90° vertical.
 
-### 5. Computational Framework: The Holographic Synthesis Unit (HSU)
-Spatial rendering at 120Hz requires specialized hardware acceleration. The **HSU** is a dedicated silicon block within the SoC that performs:
+### 5. Computational Framework: HSU and AI-Managed Energy
+Spatial rendering at 120Hz requires specialized hardware acceleration and intelligent power management to handle the massive data and current throughput.
+
+#### 5.1 The Holographic Synthesis Unit (HSU)
+A dedicated silicon block within the Snapdragon 8 Elite SoC that performs:
 1.  **Phase Modulation Calculation:** Translating 3D mesh data into interference patterns.
 2.  **Angular Distribution Mapping:** Assigning pixel data to specific micro-prism facets for parallax.
 3.  **Real-Time Depth-Map Fusion:** Synchronizing the "Step-Out-of-Screen" image with user gesture inputs.
+4.  **Zero-Copy Memory Access:** Utilizing a **Unified Spatial Memory** pool to achieve sub-10ms "photon-to-motion" latency.
+
+#### 5.2 AI-Managed Intelligent Power Distribution Network (IPDN)
+The IPDN utilizes the Snapdragon NPU to predict spatial rendering loads and dynamically shunt power:
+*   **High-Current Shunting:** Diverting energy from the **200Wh All-Solid-State Battery** and supercapacitor arrays to the SLE for high-brightness bursts.
+*   **Predictive Cooling:** Synchronizing the **Piezoelectric Active Cooling** system with predicted rendering spikes to maintain thermal stability.
+*   **Ambient Intelligence:** Utilizing the Ambient Light Sensor (ALS) to adjust FAL excitation levels for sunlight readability (up to 7,500 nits).
 
 ### 6. Interaction Model: Step-Out-of-Screen (SOOS)
 Interaction occurs in the 2cm - 30cm zone above the tablet surface, facilitated by the **Spatial Interaction Sensor Suite (SISS)**:

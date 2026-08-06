@@ -1,88 +1,58 @@
-# BendingForce v2: Technical Stack Overview
+# BendingForce: Technical Stack Overview
 
-## 1. Overview
-The BendingForce v2 Technical Stack is a multi-layered architecture designed to deliver "Step-Out-of-Screen" (SOOS) holographic experiences on a ruggedized, high-performance mobile platform. This stack bridges the gap between sophisticated optical physics and standard mobile productivity.
-
----
-
-## 2. Hardware Stack (Production-Target)
-
-The hardware stack is built around the proprietary **Apex Spatial SoC** and the **Spatial Light Engine (SLE)**.
-
-| Layer | Component | Technical Specifications |
-| :--- | :--- | :--- |
-| **Compute** | **Apex Spatial SoC** | 16-core ARM v9.2, 20-core Ray-Tracing GPU, 100 TOPS NPU. |
-| **Synthesis** | **Holographic Synthesis Unit (HSU)** | Dedicated silicon for 120Hz phase-modulation & light field calculation. |
-| **Display (SLE)** | **Laminated Optical Sandwich** | GaN-on-Si Micro-LEDs, Micro-Lens Array, DHF, MPOL, and QD Fluorescent film. |
-| **Sensors (SISS)** | **Spatial Interaction Suite** | SR-ToF (Sub-mm), Dual IR Gesture Cams, 10m LiDAR, 9-axis IMU. |
-| **Energy** | **Power Distribution (IPDN)** | 200Wh All-Solid-State Battery (ASSB), 100W GaN Wired / 65W Wireless. |
-| **Chassis** | **MTH Framework** | CNC-machined Magnesium-Titanium Hybrid with IP69K/MIL-STD-810H ratings. |
+## 1. Overview: The Screen-Centric Paradigm
+The BendingForce technical stack is organized around a single, pivotal innovation: the **Spatial Light Engine (SLE)** screen. Rather than building a locked, luxury device, the hardware and software layers are structured to support the physics and processing requirements of this revolutionary optical stack, making it adaptable to both low-cost humanitarian tablets and standard modular compute architectures.
 
 ---
 
-## 3. Software Stack: ApexOS
+## 2. Core Screen Architecture: The Spatial Light Engine (SLE)
+The primary engineering achievement of the platform is the six-layer **Laminated Optical Sandwich** which converts 2D emitter data into a coherent 3D light field.
 
-To ensure both high-performance spatial rendering and broad application compatibility, BendingForce v2 utilizes **ApexOS**, a custom operating environment.
-
-### 3.1 Base Layer: Hardened AOSP Core
-*   **Kernel:** Custom Linux kernel (v6.6+) with real-time patches (PREEMPT_RT) for ultra-low latency sensor-to-photon response (<10ms).
-*   **Runtime:** Android Open Source Project (AOSP) base to allow native execution of standard 2D Android applications alongside spatial workloads.
-
-### 3.2 Spatial Middleware: SpatialCore SDK
-*   **HSU Drivers:** Proprietary low-level drivers that interface directly between the GPU/NPU and the Holographic Synthesis Unit.
-*   **Spatial Runtime:** Manages the "Step-Out-of-Screen" volume, handling object occlusion, lighting, and multi-user parallax correction.
-*   **Gesture Engine:** AI-driven skeletal tracking and intent prediction using the SISS data.
-
-### 3.3 Application Layer
-*   **Apex Launcher:** A dual-mode UI that transitions seamlessly from a high-density 2D tablet interface to a volumetric spatial environment.
-*   **SDK Plugins:** Native support for Unity and Unreal Engine via the **SpatialCore Plugin**, allowing developers to port 3D assets with minimal friction.
+| Layer | Component | Optical & Physics Specifications | Primary Role |
+| :--- | :--- | :--- | :--- |
+| **1. Photon Source** | **Monolithic Micro-LED Array** | GaN-on-Si, >1000 PPI, narrow-band Blue (450nm) & Near-UV (395nm), >1,000,000 cd/m² peak. | High-intensity emission to overcome passive layer attenuation. |
+| **2. Collimation** | **Micro-Lens Array (MLA)** | Aspheric nano-imprinted high-index polymer ($n = 1.62$), aligned 1:1 with pixels. | Collimates light rays to $\pm 1^\circ$ normal to prevent cross-talk. |
+| **3. Mode Toggling** | **Liquid Crystal Switch** | High-speed liquid crystal layer, sub-millisecond response. | Alternates the display between a standard diffuse 2D mode and transparent 3D mode. |
+| **4. Wavefront Shaping**| **Diffractive Holographic Film (DHF)**| Surface Relief Gratings (SRG), sub-wavelength pitch (400nm-700nm). | Encodes physical depth and wavefront phase patterns. |
+| **5. Parallax Redirect** | **Micro-Prism Optical Lattice (MPOL)**| Hexagonal micro-faceted refractive lattice ($n = 1.78$), angles $15^\circ - 45^\circ$. | Directs unique light-field slices to discrete viewing angles for parallax. |
+| **6. Color & Gain** | **Fluorescent Amplification Layer (FAL)**| Quantum Dot (QD) / rare-earth phosphor high-clarity resin film. | Absorbs Blue/UV and emits saturated RGB, eliminating ghosting & boosting gain. |
 
 ---
 
-## 4. Service & Cloud Stack: Edge-First Intelligence
+## 3. Modular Computing and Software Integration
 
-BendingForce v2 prioritizes local processing for privacy and latency, while leveraging cloud resources for massive datasets.
+### 3.1 Standard Host Integration
+The BendingForce screen is designed to interface with standard computing architectures, avoiding dependency on expensive custom processors:
+*   **Holographic Synthesis Unit (HSU):** A highly portable, dedicated co-processing silicon block (or GPU-accelerated software shader core) that translates standard 3D depth-mesh data into phase-modulated interference patterns.
+*   **Unified Memory Architecture:** Operates on standard system-on-chip architectures (such as ARM-based platforms) using standard zero-copy spatial memory pipelines to achieve sub-10ms "photon-to-motion" latency.
 
-*   **Apex Edge Node:** The device acts as a local compute hub, processing 100 TOPS of AI workloads locally (SISS fusion, HSU patterns).
-*   **Apex Cloud Link:**
-    *   **Remote Spatial Rendering:** Optional off-loading of complex simulations (e.g., fluid dynamics or high-poly architectural models) to remote clusters.
-    *   **Spatial Asset Library:** A centralized repository for optimized holographic assets and BIM/CAD models.
-*   **Connectivity:** Integrated **5G NTN (Non-Terrestrial Network)** for satellite-direct data sync in remote field environments.
-
----
-
-## 5. Manufacturing & Production Stack
-
-The manufacturing process is designed for high-precision scalability, leveraging advanced material science and lithography.
-
-*   **Optical Stack (LOS):**
-    *   **Nano-Imprint Lithography (NIL):** Used to produce the Micro-Lens Array and Micro-Prism Lattice with sub-micron pitch accuracy.
-    *   **Vacuum Lamination:** Proprietary bonding process to ensure zero-gap adhesion between the seven layers of the SLE.
-*   **Chassis (MTH):**
-    *   **CNC Hybrid Machining:** Multi-axis CNC milling of Magnesium-Titanium alloys to maintain structural rigidity at a 12.5mm thickness.
-    *   **Piezoelectric Integration:** Specialized assembly for embedding solid-state active cooling modules within the chassis walls.
-*   **Quality Assurance:**
-    *   **Spatial Calibration:** Automated laser-alignment systems to calibrate each SLE unit for perfect 3D focal depth.
+### 3.2 Operating Environment & SDK
+*   **ApexOS (Hardened AOSP):** Built on the Android Open Source Project (AOSP) base, providing native compatibility with existing 2D productivity, healthcare, and educational applications.
+*   **SpatialCore SDK Plugins:** Open-source developer plugins for Unity and Unreal Engine, allowing rapid conversion of standard 3D teaching tools and medical assets into holographic format.
 
 ---
 
-## 6. Prototyping vs. Production (Pathway)
+## 4. Open Power and Structural Specifications
 
-| Feature | Phase 1/2 (Prototyping) | Phase 3/Final (Production) |
-| :--- | :--- | :--- |
-| **Compute** | NVIDIA Jetson Orin AGX / RTX 4090 | Custom Apex Spatial SoC |
-| **Optics** | Off-the-shelf MLA + High-PPI LCD/OLED | Custom Integrated SLE (Micro-LED) |
-| **Sensing** | Intel RealSense / Ultraleap LM2 | Integrated SISS (ToF/IR/LiDAR) |
-| **OS** | Ubuntu 22.04 + ROS 2 | ApexOS (AOSP-based) |
-| **Chassis** | 3D Printed / T6 Aluminum | CNC Magnesium-Titanium Hybrid |
+### 4.1 Intelligent Power Distribution Network (IPDN)
+*   **Dynamic Shunting:** Manages high-current pulses to the high-brightness screen during 3D bursts while maintaining stable current to standard computing sub-systems.
+*   **Battery Modularity:** Compatible with standard lithium-polymer battery packs for low-cost humanitarian builds, and supports advanced All-Solid-State Batteries (ASSB) for high-stakes, off-grid disaster response scenarios.
 
----
-
-## 7. Strategic Alignment: Lenovo/Motorola Integration
-The BendingForce v2 stack is designed with modularity and enterprise-ready reliability, making it a natural extension of the Lenovo/Motorola professional ecosystem.
-*   **ThinkShield Compatibility:** ApexOS is designed to integrate with Lenovo's security architecture.
-*   **Ready For (Motorola):** The hardware stack supports advanced desktop-extension modes, allowing the spatial engine to serve as a high-end 3D workstation when docked.
-*   **Rugged Reliability:** The MTH chassis and IP69K ratings align with Lenovo’s heritage of durable, mission-critical hardware (ThinkPad/ThinkStation).
+### 4.2 Structural Assembly & Durability
+*   **Laminated Stack Alignment:** Utilizes Step-and-Repeat Nano-imprint Lithography (NIL) and vacuum lamination to align optical films with sub-500nm precision.
+*   **Chassis Modularity:** The screen can be housed in either a low-cost, impact-resistant composite shell (for educational deployment) or a CNC-machined Magnesium-Titanium alloy housing (for extreme-environment emergency response).
 
 ---
-*Technical Stack Document - Confidential - Version 1.1*
+
+## 5. Prototyping and Scaling Pathway
+To rapidly lower the cost of the screen for global humanitarian deployment, the development pathway transitions from off-the-shelf development rigs to a fully integrated laminate.
+
+| Feature | Phase 1 (Proof-of-Concept) | Phase 2 (Development Stack) | Phase 3 (Humanitarian Scaling) |
+| :--- | :--- | :--- | :--- |
+| **Core Light Source** | High-PPI OLED Development Panel | High-PPI Monolithic Mini-LED | Low-cost Custom Micro-LED |
+| **Laminated Optics** | Manual Film Alignment Jigs | Machine-aligned Nano-imprinted Film | High-volume Vacuum Laminated Stack |
+| **Compute Core** | RTX 4090 / Ubuntu 22.04 | Jetson Orin AGX / Linux | Off-the-shelf Tablet SoC + HSU |
+| **Enclosure** | 3D Printed / Acrylic Rig | Standard Aluminum Casing | Impact-resistant Recycled Composites |
+
+---
+*Technical Stack Document - Focus: Spatial Light Engine Innovation - Version 1.5*
